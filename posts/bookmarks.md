@@ -1,20 +1,20 @@
 ---
 title: Bookmarks
 description: Some of my favorite links
-date: 2023-08-12T15:30:30.526Z
+date: 2023-08-12T16:29:27.856Z
 tags:
   - app-idea
   - links
 ---
-## Form builder
+**Form builder**
 
 * [Tally](tally.so/)
 
-## Shorten links
+**Shorten links**
 
 * [Short link](https://dub.sh/)
 
-## Tailwind components & templates:
+**Tailwind components & templates:**
 
 * [Shadcn components](https://ui.shadcn.com/)
 * [Preline components](https://preline.co/)
