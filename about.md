@@ -18,19 +18,17 @@ Debugger by day, development by night.
 
 ### Technologies:
 
-#### Frontend:
+**Frontend**:
 
 * HTML, CSS, JavaScript, Bootstrap, Ionic, Headlessui,
   Tailwind CSS, Material Design, Shadcn/ui, Nunjuck
 
-#### 
-Backend:
+**Backend**:
 
 * Angular, Deno, Django, ExpressJs, Fresh, Java,
   Python, Nextjs, Spring Boot, TypeScript
 
-
-#### Others:
+**Others**:
 
 * Atlassian Tools, Convex, Cypress, Deta, Docker,
   Firebase, Flyway, Git, MongoDb, Mongoose, Prisma,
