@@ -11,6 +11,12 @@ Just broset.
 
 ## What's up
 
+### Aug 13:
+
+Working on Google Map integration with biocycling.
+
+### Aug 12: 
+
 Aside from learning how to swim, I'm creating 4th iteration of nonwiz.dev page. Built with:
 
 * [Lume](https://lume.land/): static site generator with deno with nunjuck template.
