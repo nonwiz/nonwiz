@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+---
+<article data-pagefind-body>
+  <div>
+    <h1>{{ title }}</h1>
+
+    <nav>
+      {% for tag in tags %}
+        <a href="/tags/{{ tag }}/" class="tag">{{ tag }}</a>
+      {% endfor %}
+      <time class="post-date" datetime="{{ date | date('DATETIME') }}">
+        {{ date | date('HUMAN_DATE') }}
+      </time>
+
+    </nav>
+
+  </div>
+
+  {{ content | safe }}
+</article>
+
+<hr>
+
+<nav class="post-navigation">
+  <ul>
+    {%- set previousPost = search.previousPage(url, "type=posts") %}
+    {%- if previousPost %}
+      <li>
+      ← Previous: <a href="{{ previousPost.data.url }}" rel="prev">{{ previousPost.data.title }}</a>
+      </li>
+    {% endif %}
+
+    {%- set nextPost = search.nextPage(url, "type=posts") %}
+    {%- if nextPost %}
+      <li>
+        <strong>Next: <a href="{{ nextPost.data.url }}" rel="next">{{ nextPost.data.title }}</a> →</strong>
+      </li>
+    {% endif %}
+  </ul>
+</nav>

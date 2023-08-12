@@ -1,0 +1,31 @@
+/* Code syntax highlight */
+@import "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.0/build/styles/github-dark.min.css";
+
+@import "css/reset.css";
+@import "css/sakura-earthly.css";
+@import "css/tag.css";
+
+ninja-keys {
+  --ninja-width: 90vw;
+}
+
+@media screen and (min-width: 640px) {
+  ninja-keys {
+    --ninja-width: 640px;
+    --ninja-accent-color: var(--secondary);
+  }
+}
+
+.post-navigation {
+  & ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  & li {
+    padding: 1em;
+  }
+}

@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+---
+
+{{ content | safe }}
+
+{% set latestPosts = search.pages("type=posts", "date=desc", 3) %}
+
+<hr/>
+<footer>
+    <h3>Note: </h3>
+    <ul>
+        <li>
+          Latest posts: 
+          {% for item in latestPosts %}
+                <a href="{{ item.data.url }}">
+                    {{ item.data.title }}{% if loop.last %}{% else %}, {% endif %}
+                </a>
+            {% endfor %}
+        </li>
+        <li>URL: {{ url }}</li>
+        <li>By: Broset </li>
+        <li>Contact: <a href="mailto:bdchanbroset@gmail.com">Gmail, </a>
+            <a href="https://read.cv/nonwiz">Read.cv</a>
+        </li>
+        <li>Updated: Aug 13, 2023</li>
+    </ul>
+</footer>
