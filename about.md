@@ -1,11 +1,10 @@
 ---
 title: About Me
-layout: layouts/home.njk
 menu:
   visible: true
   order: 2
+layout: layouts/home.njk
 ---
-
 ## About me
 
 Debugger by day, development by night.
@@ -17,7 +16,27 @@ Debugger by day, development by night.
 * Vscode IDE + neovim + Intellij keybinding. (love the 'double shift')
 * Steam Proton: running windows games I loved (Path of Exile) 
 
-### Facts 
+### Technologies:
+
+#### Frontend:
+
+* HTML, CSS, JavaScript, Bootstrap, Ionic, Headlessui,
+  Tailwind CSS, Material Design, Shadcn/ui, Nunjuck
+
+#### 
+Backend:
+
+* Angular, Deno, Django, ExpressJs, Fresh, Java,
+  Python, Nextjs, Spring Boot, TypeScript
+
+
+#### Others:
+
+* Atlassian Tools, Convex, Cypress, Deta, Docker,
+  Firebase, Flyway, Git, MongoDb, Mongoose, Prisma,
+  PostgreSQL, PLSQL, Rest API, RPC, RStudio, Vyper
+
+### Facts
 
 * I don't believe in pronounces.
 * Google sucks so do their frameworks! (esp. Angular, even the original founder worked on a new one Qwik, using jsx as well.)
@@ -32,19 +51,19 @@ Debugger by day, development by night.
 
 ### Artist / Bands I liked:
 
-* Cigarettes After Sex: ["Apocalypse", "Nothing's Gonna Hurt You", "Sweet", "K."]
-* Winter Aid: ["The Wisp Sings]
-* Lord Huron: ["The Night We Met", "Ends of the Earth"]
-* Of Monsters and Men: ["Crystals"]
-* Handsome Ghost: ["Reckless Lover"]
-* Duncan Laurence: ["Arcade"]
-* Steve Lacy: ["Bad Habit"]
-* Evanescence: ["Bring me to life"]
-* Vance Joy: ["Riptide"]
-* Labrinth: ["Still Don't Know My Name"]
-* Lana Del Rey: ["Radio"]
+* Cigarettes After Sex: \["Apocalypse", "Nothing's Gonna Hurt You", "Sweet", "K."]
+* Winter Aid: \["The Wisp Sings]
+* Lord Huron: \["The Night We Met", "Ends of the Earth"]
+* Of Monsters and Men: \["Crystals"]
+* Handsome Ghost: \["Reckless Lover"]
+* Duncan Laurence: \["Arcade"]
+* Steve Lacy: \["Bad Habit"]
+* Evanescence: \["Bring me to life"]
+* Vance Joy: \["Riptide"]
+* Labrinth: \["Still Don't Know My Name"]
+* Lana Del Rey: \["Radio"]
 
-### Big fans of 
+### Big fans of
 
 * Avanier: introducing Linux Distro + Vim + Tmux + Git + JavaScript.
 * Khazifire: partner in uni.
@@ -53,5 +72,4 @@ Debugger by day, development by night.
 * Michael Knowles: -
 * Shadcn: love the frontend.
 
-
-** 2023 collections
+\*\* 2023 collections
