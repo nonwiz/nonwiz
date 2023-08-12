@@ -1,6 +1,6 @@
 ---
 title: Universal frontend components
-description: ""
+description: Creating a framework agnostic frontend library.
 date: 2023-08-12T16:05:14.706Z
 tags:
   - idea
