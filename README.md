@@ -11,7 +11,7 @@ Run Lume with `deno task serve`.
 - Class: Human
 - Origin: Phnom Penh, Cambodia
 - Current: Thailand
-- Love: Vim, Tmux, ~~Ubuntu~~ Popos 
+- Love: Vim, Tmux, ~~Ubuntu~~ PopOS
 
 ## Development
 
