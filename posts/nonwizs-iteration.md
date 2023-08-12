@@ -1,7 +1,7 @@
 ---
 title: Nonwiz's iteration
 description: Comparison from my first personal webpage until now.
-date: 2023-08-12T16:30:35.072Z
+date: 2023-08-12T16:32:06.961Z
 tags:
   - personal
 ---
@@ -23,5 +23,6 @@ Currently, this site is fourth iteration of the above. Some ideas I have in mind
 
 * Add a back button that link to previous page.
 * Adding pinned posts to home page / posts / command. // still considering on this.
+* Add some margin between content and page's tags and title.
 
 If you have any good suggestions, feel free to ping me at [Gmail](mailto:bdchanbroset@gmail.com).
