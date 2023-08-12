@@ -8,7 +8,9 @@ tags:
   - web-app
 draft: false
 ---
-## Features
+
+
+**Features**
 
 * Allow users to create a collection to store favorite links
 * Allow users to set collection visibility public/private
