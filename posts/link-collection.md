@@ -2,7 +2,7 @@
 title: Link collection
 description: Allows user to manage favorite links including collection (+
   visibility), description, and others.
-date: 2023-08-11T17:16:14.545Z
+date: 2023-08-12T15:30:44.262Z
 tags:
   - app-idea
   - web-app
