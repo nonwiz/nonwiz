@@ -1,7 +1,7 @@
 ---
 title: Bookmarks
 description: Some of my favorite links
-date: 2023-08-12T08:44:03.714Z
+date: 2023-08-12T15:30:30.526Z
 tags:
   - app-idea
   - links
@@ -10,7 +10,9 @@ tags:
 
 * [Tally](tally.so/)
 
+## Shorten links
 
+* [Short link](https://dub.sh/)
 
 ## Tailwind components & templates:
 
