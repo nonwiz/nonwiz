@@ -1,23 +1,23 @@
 ---
 title: Nonwiz's iteration
 description: Comparison from my first personal webpage until now.
-date: 2023-08-12T15:29:21.074Z
+date: 2023-08-12T16:30:35.072Z
 tags:
   - personal
 ---
-## First
+**First**
 
 ![First personal page](/img/first_iteration.png "first iteration")
 
-## Second
+**Second**
 
 ![Second personal page](/img/second_iteration.png "Second iteration")
 
-## Third
+**Third**
 
 ![third iteration](/img/third_iteration.png "third iteration")
 
-## Fourth
+**Fourth**
 
 Currently, this site is fourth iteration of the above. Some ideas I have in mind for further improvement:
 
