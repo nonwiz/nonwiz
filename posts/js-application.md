@@ -11,6 +11,7 @@ tags:
   - text-to-speech
   - webcam
   - geolocation
+pinned: true
 ---
 ## **Keyboard event listener**
 
