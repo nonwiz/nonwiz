@@ -20,6 +20,13 @@ layout: layouts/base.njk
   {{ content | safe }}
   <div>
     <p>Current URL: {{ url }}</p>
+    {% set pinnedPosts = search.pages("pinned=true") %}
+    <p>
+      <strong>Pinned posts</strong>:
+ {% for item in pinnedPosts %} <a href="{{ item.data.url }}"> {{ item.data.title }}{% if loop.last %} {% else %}, {% endif %} </a>
+      {% endfor %}
+    </p>
+
   </div>
 </article>
 
