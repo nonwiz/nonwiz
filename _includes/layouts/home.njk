@@ -4,6 +4,18 @@ layout: layouts/base.njk
 
 {{ content | safe }}
 
+{% set pinnedPosts = search.pages("type=posts") %}
+<section>
+    <p>
+        <strong>Pinned posts:</strong>
+ {% for item in pinnedPosts %}
+            <a href="{{ item.data.url }}">
+                {{ item.data.title }}{% if loop.last %}{% else %}, {% endif %}
+            </a>
+        {% endfor %}
+    </p>
+</section>
+
 {% set latestPosts = search.pages("type=posts", "date=desc", 3) %}
 
 <hr/>
@@ -14,7 +26,7 @@ layout: layouts/base.njk
           Latest posts: 
           {% for item in latestPosts %}
                 <a href="{{ item.data.url }}">
-                    {{ item.data.title }}{% if loop.last %}{% else %}, {% endif %}
+                    {{ item.data.title }} {% if loop.last %}{% else %}, {% endif %}
                 </a>
             {% endfor %}
         </li>
