@@ -65,12 +65,14 @@
           id: "Home",
           title: "Home",
           mdIcon: "home",
+          hotkey: "shift+h",
           handler: () => {
             browse("/")
           }
         }, {
           id: "Open Posts",
           title: "All posts",
+          hotkey: "shift+a",
           mdIcon: "apps",
           handler: () => {
             browse("/posts")
@@ -78,6 +80,7 @@
         }, {
           id: "All tags",
           title: "All tags",
+          hotkey: "shift+t",
           mdIcon: "category",
           handler: () => {
             browse("/tags")
@@ -86,12 +89,14 @@
           id: "About me",
           title: "About me",
           mdIcon: "person",
+          hotkey: "shift+m",
           handler: () => {
             browse("/about")
           }
         }, {
-          id: "Portfolio",
-          title: "Portfolio",
+          id: "Collection",
+          title: "Collection / Portfolio",
+          hotkey: "shift+c",
           mdIcon: "work",
           handler: () => {
             window.open("https://read.cv/nonwiz", "_blank")
@@ -99,11 +104,46 @@
         }
       ];
 
+      {% set posts = [] %}
+      {% for post in search.pages("pinned=true") %}
+        {% set posts = (posts.push({url: post.data.url, title: post.data.title}), posts) %}
+      {% endfor %}
+      try {
+        const cleanedPosts = `{{ posts | dump }}`.replaceAll(/&quot;/g, '"');
+        const pins = JSON.parse(cleanedPosts);
+        const parent = {
+          id: 'Pinned',
+          title: "Pinned posts",
+          mdIcon: "attachment",
+          hotkey: "shift+p",
+          children: [],
+          handler: () => { 
+            ninja.open({parent: "Pinned"});
+            return { keepOpen: true }
+          }
+        }
+        const temp = []
+        pins.forEach((item, index) => {
+          parent.children.push({
+            id: item.title,
+            hotkey: `shift+${index}`,
+            title: item.title,
+            mdIcon: "star",
+            handler: () => browse(item.url)
+          });
+        });
+        hotkeys.push(parent);
+
+      } catch (e) {
+        console.log("error parsing pinned posts", e)
+      }
+
       function findSentenceWithTerm(content, term) {
         var sentences = content.split('. ');
         for (var i = 0; i < sentences.length; i++) {
           if (sentences[i].toLowerCase().includes(term.toLowerCase())) {
-            return sentences[i];
+            {# Only show 100 letters  #}
+            return sentences[i].slice(0, 100);
           }
         }
         return null;
@@ -133,8 +173,9 @@
           const data = await Promise.all(results.slice(0, 5).map(r => r.data()));
           console.log({data})
           const parsedData = data
-            .map(d => ({
+            .map((d, index) => ({
               id: d.url,
+              hotkey: `shift+${index}`,
               title: d.url + " - " + findSentenceWithTerm(d.content, term),
               mdIcon: "arrow_right",
               handler: () => {
@@ -149,9 +190,9 @@
           ];
         })
       });
-      /* 
+      /*
       // uncomment below to allow voice recognition - open search || close search
-      window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
+      window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
       const recognition = new SpeechRecognition();
       recognition.interimResults = true;
 
