@@ -13,6 +13,7 @@ pinned: true
 * [Marketing](https://marketingexamples.com/)
 * [Writing](https://hemingwayapp.com/)
 * [Algorithm](https://csvistool.com/)
+* [Landing page](https://landingpage.fyi/)
 
 **Authentication**
 
