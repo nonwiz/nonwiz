@@ -12,6 +12,11 @@ pinned: true
 * [Tally](tally.so/)
 * [Dorf](https://dorf.vercel.app/) 
 
+Node libaries:
+
+* [Zod: Schema validator](https://zod.dev/)
+* [Novel (Notion-style editor)](novel.sh)
+
 **Social media / OpenGraph / Analytics**
 
 * [Opengraph image generator](https://og-playground.vercel.app/)
