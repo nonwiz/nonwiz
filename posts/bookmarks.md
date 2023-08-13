@@ -31,6 +31,10 @@ pinned: true
 * [Zod: Schema validator](https://zod.dev/)
 * [Novel (Notion-style editor)](novel.sh)
 
+**JavaScript utilities**
+
+* [1Loc: One line utilities](https://1loc.dev/)
+
 **Social media / OpenGraph / Analytics**
 
 * [Opengraph image generator](https://og-playground.vercel.app/)
