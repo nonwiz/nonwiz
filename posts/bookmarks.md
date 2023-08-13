@@ -25,6 +25,10 @@ pinned: true
 * [Flameshot](https://flameshot.org/): screenshot with in-app editing.
 * [Excalidraw](excalidraw.com/): drawing on web 
 
+**Cool sites:**
+
+* [ASCII preview for all the programming languages supported by onefetch](https://onefetch.dev/)
+
 **Form builder**
 
 * [Tally](tally.so/)
