@@ -1,5 +1,5 @@
 ---
-title: Js application
+title: JS application
 description: Some of the cool JS implementation.
 date: 2023-08-13T14:26:43.455Z
 tags:
