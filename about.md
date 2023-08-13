@@ -15,6 +15,7 @@ Debugger by day, development by night.
 * Firefox: fastest browser I've seen and worked with.
 * Vscode IDE + neovim + Intellij keybinding. (love the 'double shift')
 * Steam Proton: running windows games I loved (Path of Exile) 
+* Find out more at [Bookmarks](nonwiz.dev/posts/bookmarks/).
 
 ### Technologies:
 
