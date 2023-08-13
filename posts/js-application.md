@@ -19,36 +19,33 @@ tags:
 Below is code sample for window event handler to listen to "key typed". In this case, when user type dark, it would replace the css var.
 
 ```javascript
-      const history = []
-      const key = 'darkmode'
-      function enterDarkmode(e) {
-        history.push(e.key);
-        if (history.length > 9) {
-          history.shift();
-        }
-        if (history.join('').includes(key)) {
-          document.documentElement.style.setProperty('--black', 'white');
-          document.documentElement.style.setProperty('--white', '#342E37');
-          console.log("enter dark mode")
-        } else if (history.join('').includes('reset')) {
-            document.documentElement.style.setProperty('--black', '#342E37');
-            document.documentElement.style.setProperty('--white', 'white');
-      
-        }
-        console.log(history);
-      }
+const history = []
+const key = 'darkmode'
+function enterDarkmode(e) {
+  history.push(e.key);
+  if (history.length > 9) {
+    history.shift();
+  }
+  if (history.join('').includes(key)) {
+    document.documentElement.style.setProperty('--black', 'white');
+    document.documentElement.style.setProperty('--white', '#342E37');
+    console.log("enter dark mode")
+  } else if (history.join('').includes('reset')) {
+      document.documentElement.style.setProperty('--black', '#342E37');
+      document.documentElement.style.setProperty('--white', 'white');
 
-      window.addEventListener('keydown', enterDarkmode);
+  }
+  console.log(history);
+}
+
+window.addEventListener('keydown', enterDarkmode);
 ```
-
-
 
 ## Text to speech
 
 First, there's should be an text ("textarea/input") and voices("select")
 
 ```javascript
-
   const text = document.querySelector('#text');
   const select = document.querySelector('#voices');
   const msg = new SpeechSynthesisUtterance();
@@ -80,49 +77,44 @@ First, there's should be an text ("textarea/input") and voices("select")
 
   document.addEventListener('DOMContentLoaded', addOptions)
   select.addEventListener('change', setVoice);
-
-
 ```
 
 ## Speech Recognition
 
 ```javascript
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
+const recognition = new SpeechRecognition();
+recognition.interimResults = true;
+const text = document.querySelector('#text');
+let p = document.createElement('p');
+text.appendChild(p);
 
-        window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
-        const recognition = new SpeechRecognition();
-        recognition.interimResults = true;
-        const text = document.querySelector('#text');
-        let p = document.createElement('p');
-        text.appendChild(p);
+recognition.addEventListener('result', e => {
+  const transcript = [...e.results]
+    .map(result => result[0])
+    .map(result => result.transcript)
+    .join('');
+  console.log(e.results, e.results[0]);
+  p.textContent = transcript;
+  if (e.results[0].isFinal) {
+    p = document.createElement('p');
+    text.appendChild(p);
+  }
+  if (transcript.includes('enable dark mode')) {
+    document.documentElement.style.setProperty('--black', 'white');
+    document.documentElement.style.setProperty('--white', '#342E37');
+  }
+  if (transcript.includes('reset')) {
+    document.documentElement.style.setProperty('--black', '#342E37');
+    document.documentElement.style.setProperty('--white', 'white');
+  }
+})
 
-        recognition.addEventListener('result', e => {
-          const transcript = [...e.results]
-            .map(result => result[0])
-            .map(result => result.transcript)
-            .join('');
-          console.log(e.results, e.results[0]);
-          p.textContent = transcript;
-          if (e.results[0].isFinal) {
-            p = document.createElement('p');
-            text.appendChild(p);
-          }
-          if (transcript.includes('enable dark mode')) {
-            document.documentElement.style.setProperty('--black', 'white');
-            document.documentElement.style.setProperty('--white', '#342E37');
-          }
-          if (transcript.includes('reset')) {
-            document.documentElement.style.setProperty('--black', '#342E37');
-            document.documentElement.style.setProperty('--white', 'white');
-          }
-        })
+recognition.addEventListener('end', recognition.start);
+recognition.start();
 
-        recognition.addEventListener('end', recognition.start);
-        recognition.start();
 
-    
 ```
-
-
 
 ## Unreal webcam
 
@@ -212,74 +204,65 @@ function takePhoto() {
 getVideo();
 
 video.addEventListener('canplay', paintToCanvas)
-
-
 ```
-
-
 
 ## Pure ajax function with fetch
 
 ```javascript
+const cities = [];
 
-      const cities = [];
+function matchKey(key, cities) {
+  const regex = new RegExp(key, 'gi');
+  return cities.filter(place => {
+    return place.city.match(regex) || place.state.match(regex);
+  })
+}
+const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+const search = document.querySelector('.search');
+const suggestion = document.querySelector('.suggestions');
+console.log(suggestion);
 
-      function matchKey(key, cities) {
-        const regex = new RegExp(key, 'gi');
-        return cities.filter(place => {
-          return place.city.match(regex) || place.state.match(regex);
-        })
-      }
-      const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
-      const search = document.querySelector('.search');
-      const suggestion = document.querySelector('.suggestions');
-      console.log(suggestion);
+search.addEventListener('change', keySearch);
+search.addEventListener('keyup', keySearch);
+fetch(endpoint)
+  .then(blob => blob.json())
+  .then(data => cities.push(...data));
 
-      search.addEventListener('change', keySearch);
-      search.addEventListener('keyup', keySearch);
-      fetch(endpoint)
-        .then(blob => blob.json())
-        .then(data => cities.push(...data));
+function keySearch() {
+  const matchArr = matchKey(this.value, cities);
+  const html = matchArr.map(place => {
+    const regex = new RegExp(this.value, 'gi');
+    const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
+    const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);
+    return `
+      <li>
+        <span class="name">${cityName}, ${stateName}</span>
+        <span class="population">${place.population}</span>
+      </li>
+    `
+  }).join('');
+  console.log(matchArr);
+  suggestion.innerHTML = html;
+}
 
-      function keySearch() {
-        const matchArr = matchKey(this.value, cities);
-        const html = matchArr.map(place => {
-          const regex = new RegExp(this.value, 'gi');
-          const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
-          const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);
-          return `
-            <li>
-              <span class="name">${cityName}, ${stateName}</span>
-              <span class="population">${place.population}</span>
-            </li>
-          `
-        }).join('');
-        console.log(matchArr);
-        suggestion.innerHTML = html;
-      }
-
-
-    
 ```
 
 ## Geo-location
 
 ```javascript
+const compass = document.querySelector("#compass");
+const speed = document.querySelector("#speed");
 
-      const compass = document.querySelector("#compass");
-      const speed = document.querySelector("#speed");
-
-      navigator.geolocation.watchPosition(
-        (data) => {
-          console.log(data);
-          speed.textContent = `${data.coords.speed} km/hr`;
-          compass.style.transform = `rotate(${data.coords.heading}deg)`;
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
-      // another one is getCurrentPosition
-      // Watch position gives data overtime
-    
+navigator.geolocation.watchPosition(
+  (data) => {
+    console.log(data);
+    speed.textContent = `${data.coords.speed} km/hr`;
+    compass.style.transform = `rotate(${data.coords.heading}deg)`;
+  },
+  (error) => {
+    console.log(error);
+  }
+);
+// another one is getCurrentPosition
+// Watch position gives data overtime
 ```
