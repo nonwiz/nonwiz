@@ -71,5 +71,6 @@ Debugger by day, development by night.
 * Jordan Peterson: -
 * Michael Knowles: -
 * Shadcn: love the frontend.
+* Vim: best editor tool.
 
 \*\* 2023 collections
