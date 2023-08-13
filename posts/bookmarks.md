@@ -11,9 +11,10 @@ tags:
 * [Tally](tally.so/)
 * [Dorf](https://dorf.vercel.app/) 
 
-**Social media / Opengraph**
+**Social media / OpenGraph / Analytics**
 
-* **[Opengraph image generator](https://og-playground.vercel.app/)**
+* [Opengraph image generator](https://og-playground.vercel.app/)
+* [Umami Analytic](analytics.umami.is/)
 
 **Shorten links**
 
