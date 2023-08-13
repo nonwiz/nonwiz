@@ -1,5 +1,5 @@
 ---
-title: Cool JS built-in features
+title: Underestimated JS built-in features
 description: Some of the cool JS implementation including event listener,
   webcam, geolocation, text-to-speech, voice-recognition..
 date: 2023-08-13T14:26:43.455Z
