@@ -7,12 +7,19 @@ tags:
   - links
 pinned: true
 ---
+**Learning platform**
+
+* [UX/UI designs](app.uxcel.com) 
+* [Marketing](https://marketingexamples.com/)
+* [Writing](https://hemingwayapp.com/)
+* [Algorithm](https://csvistool.com/)
+
 **Form builder**
 
 * [Tally](tally.so/)
 * [Dorf](https://dorf.vercel.app/) 
 
-Node libaries:
+**Node libaries:**
 
 * [Zod: Schema validator](https://zod.dev/)
 * [Novel (Notion-style editor)](novel.sh)
