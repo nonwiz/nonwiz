@@ -14,8 +14,7 @@ layout: layouts/base.njk
 
         <li>
             Pinned posts:
-            {% for item in pinnedPosts %} <a href="{{ item.data.url }}"> {{ item.data.title }} {% if loop.last %}{% else %},{% endif %}</a>
-            {% endfor %}
+            {% for item in pinnedPosts %} <a href="{{ item.data.url }}"> {{ item.data.title }}{% if loop.last %}{% else %},{% endif %}</a>{% endfor %}
         </li>
         <li>
           Latest posts: 
