@@ -21,12 +21,12 @@ Debugger by day, development by night.
 **Frontend**:
 
 * HTML, CSS, JavaScript, Bootstrap, Ionic, Headlessui,
-  Tailwind CSS, Material Design, Shadcn/ui, Nunjuck
+  Tailwind CSS, Material Design, Shadcn/ui, Nunjuck, Jinja
 
 **Backend**:
 
 * Angular, Deno, Django, ExpressJs, Fresh, Java,
-  Python, Nextjs, Spring Boot, TypeScript
+  Python, Nextjs, Spring Boot, TypeScript, Lume, TinaCMS
 
 **Others**:
 
