@@ -16,8 +16,11 @@ layout: layouts/base.njk
     </nav>
 
   </div>
-  <br />
+  <br/>
   {{ content | safe }}
+  <div>
+    <p>Current URL: {{ url }}</p>
+  </div>
 </article>
 
 <hr>
