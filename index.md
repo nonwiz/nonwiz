@@ -1,5 +1,5 @@
 ---
-title: Home | Nonwiz
+title: Home
 menu:
   visible: true
   order: 1
