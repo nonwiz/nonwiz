@@ -11,7 +11,9 @@ Just broset.
 
 ## What's up
 
-Aug 13: Working on Google Map integration with biocycling.
+Aug 13: Additional improvement to nonwiz.dev and biocycling project.
+
+* Command + K (MacOS) or Ctrl + K (Linux): are now integrated with Pagefind. You can search for any content on other pages.
 
 Aug 12: Aside from learning how to swim, I'm creating 4th iteration of nonwiz.dev page. Built with:
 
