@@ -13,7 +13,7 @@ Just broset.
 
 Aug 13: Additional improvement to nonwiz.dev and biocycling project.
 
-* Command + K (MacOS) or Ctrl + K (Linux): are now integrated with Pagefind. You can search for any content on other pages.
+* Command + K (MacOS) or Ctrl + K (Linux): are now integrated with Pagefind (You can search for any content on even from other pages).
 
 Aug 12: Aside from learning how to swim, I'm creating 4th iteration of nonwiz.dev page. Built with:
 
