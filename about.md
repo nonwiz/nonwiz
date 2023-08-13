@@ -7,9 +7,34 @@ layout: layouts/home.njk
 ---
 ## About me
 
-Debugger by day, development by night.
+> Debugger by day, development by night.
 
-### Everyday tools:
+**Some other stuff I believe:**
+
+* I don't believe in pronounces.
+* Google sucks so do their frameworks! (esp. Angular, even the original founder worked on a new one Qwik, using jsx as well.) 😂
+* Accidentally override one of my git repo, if you're using --orphan, make sure to remote the original remote first before doing anything silly like me. 
+* Designer hates it when other copy/paste his works. While engineer loves to share his code base. 🤔
+
+### **Things I sucked at**
+
+* Taking photo
+* Drawing/painting
+* Singing and playing instruments
+* Physical sports
+* E-sport
+
+### **Big fans of**
+
+* Avanier: introducing Linux Distro + Vim + Tmux + Git + JavaScript.
+* Khazifire: partner in uni.
+* Bryan: accomplice in Path of Exile instead of studying exam.
+* Jordan Peterson: -
+* Michael Knowles: -
+* Shadcn/ui: love the frontend.
+* Vim: best editor tool.
+
+### **Everyday tools:**
 
 * PopOS: laptop workstation. (would prefer Linux Regolith over PopOS)
 * Firefox: fastest browser I've seen and worked with.
@@ -17,7 +42,7 @@ Debugger by day, development by night.
 * Steam Proton: running windows games I loved (Path of Exile) 
 * Find out more at [Bookmarks](nonwiz.dev/posts/bookmarks/).
 
-### Technologies:
+### Technologies/Frameworks:
 
 **Frontend**:
 
@@ -35,21 +60,6 @@ Debugger by day, development by night.
   Firebase, Flyway, Git, MongoDb, Mongoose, Prisma,
   PostgreSQL, PLSQL, Rest API, RPC, RStudio, Vyper
 
-### Facts
-
-* I don't believe in pronounces.
-* Google sucks so do their frameworks! (esp. Angular, even the original founder worked on a new one Qwik, using jsx as well.) 😂
-* Accidentally override one of my git repo, if you're using --orphan, make sure to remote the original remote first before doing anything silly like me. 
-* Designer hates it when other copy/paste his works. While engineer loves to share his code base. 🤔
-
-### Things I sucked at
-
-* Taking photo
-* Drawing/painting
-* Singing and playing instruments
-* Physical sports
-* E-sport
-
 ### Artist / Bands I liked:
 
 * Cigarettes After Sex: \["Apocalypse", "Nothing's Gonna Hurt You", "Sweet", "K."]
@@ -63,15 +73,5 @@ Debugger by day, development by night.
 * Vance Joy: \["Riptide"]
 * Labrinth: \["Still Don't Know My Name"]
 * Lana Del Rey: \["Radio"]
-
-### Big fans of
-
-* Avanier: introducing Linux Distro + Vim + Tmux + Git + JavaScript.
-* Khazifire: partner in uni.
-* Bryan: accomplice in Path of Exile instead of studying exam.
-* Jordan Peterson: -
-* Michael Knowles: -
-* Shadcn: love the frontend.
-* Vim: best editor tool.
 
 \*\* 2023 collections
