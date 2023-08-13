@@ -4,7 +4,7 @@ layout: layouts/base.njk
 
 {{ content | safe }}
 
-{% set pinnedPosts = search.pages("type=posts") %}
+{% set pinnedPosts = search.pages("pinned=true") %}
 <section>
     <p>
         <strong>Pinned posts:</strong>
