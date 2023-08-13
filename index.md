@@ -17,7 +17,8 @@ layout: layouts/home.njk
 
 Aug 13: Additional improvement to nonwiz.dev and biocycling project.
 
-* Command + K (MacOS) or Ctrl + K (Linux): are now integrated with Pagefind (You can search for any content on even from other pages).
+* Command + K (MacOS) or Ctrl + K (Linux): are now integrated with Pagefind (You can search for any content on even from other pages). 
+* Pinned posts and all search results now given hotkeys (You don't have to use mouse anymore browsing this site). 
 * Rest in peace Bram.
 
 Aug 12: Aside from learning how to swim, I'm creating 4th iteration of nonwiz.dev page. Built with:
