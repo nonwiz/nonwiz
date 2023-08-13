@@ -7,7 +7,11 @@ layout: layouts/home.njk
 ---
 ## Introduction
 
-Just broset.
+✋ Just broset.
+
+*Got some half bake idea for monthly project?* 
+
+> I'm all ear.
 
 ## What's up
 
