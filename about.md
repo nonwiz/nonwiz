@@ -37,7 +37,8 @@ Debugger by day, development by night.
 ### Facts
 
 * I don't believe in pronounces.
-* Google sucks so do their frameworks! (esp. Angular, even the original founder worked on a new one Qwik, using jsx as well.)
+* Google sucks so do their frameworks! (esp. Angular, even the original founder worked on a new one Qwik, using jsx as well.) 😂
+* Accidentally override one of my git repo, if you're using --orphan, make sure to remote the original remote first before doing anything silly like me. 
 
 ### Things I sucked at
 
