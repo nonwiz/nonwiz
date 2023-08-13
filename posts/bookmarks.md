@@ -1,7 +1,7 @@
 ---
 title: Bookmarks
 description: Some of my favorite links
-date: 2023-08-13T06:23:42.526Z
+date: 2023-08-13T16:32:45.742Z
 tags:
   - app-idea
   - links
@@ -13,6 +13,10 @@ pinned: true
 * [Marketing](https://marketingexamples.com/)
 * [Writing](https://hemingwayapp.com/)
 * [Algorithm](https://csvistool.com/)
+
+**Authentication**
+
+* [Clerk:](clerk.com/) simplest to implement authetnication and authorization.
 
 **Productivity tools**
 
@@ -26,7 +30,7 @@ pinned: true
 * [Tally](tally.so/)
 * [Dorf](https://dorf.vercel.app/) 
 
-**Node libaries:**
+**Node libraries:**
 
 * [Zod: Schema validator](https://zod.dev/)
 * [Novel (Notion-style editor)](novel.sh)
@@ -35,7 +39,7 @@ pinned: true
 
 * [1Loc: One line utilities](https://1loc.dev/)
 
-**Social media / OpenGraph / Analytics**
+**Social media / Open Graph / Analytics**
 
 * [Opengraph image generator](https://og-playground.vercel.app/)
 * [Umami Analytic](analytics.umami.is/)
@@ -46,7 +50,7 @@ pinned: true
 
 **Tailwind components & templates:**
 
-* [Shadcn components](https://ui.shadcn.com/)
+* [Shadcn/ui components](https://ui.shadcn.com/)
 * [Preline components](https://preline.co/)
 * [Flowbite components](https://flowbite.com/docs/components/accordion/)
 * [Tailblocks — Ready-to-use Tailwind CSS blocks](https://tailblocks.cc/)
