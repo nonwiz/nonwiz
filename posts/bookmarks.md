@@ -14,6 +14,11 @@ pinned: true
 * [Writing](https://hemingwayapp.com/)
 * [Algorithm](https://csvistool.com/)
 
+**Productivity tools**
+
+* [Compressor for optimizing image ](https://compressor.io/)
+* [Obsidian](https://obsidian.md/) || [Lumen:](https://uselumen.com/) Note taking app.
+
 **Form builder**
 
 * [Tally](tally.so/)
