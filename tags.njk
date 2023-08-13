@@ -6,3 +6,5 @@ layout: layouts/home.njk
 {% for page in search.pages("type=tag", "tag") %}
   <a href="{{ page.data.url }}" class="tag is-big">{{ page.data.tag }}</a>
 {% endfor %}
+
+<br />

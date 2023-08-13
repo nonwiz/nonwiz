@@ -4,33 +4,26 @@ layout: layouts/base.njk
 
 {{ content | safe }}
 
-{% set pinnedPosts = search.pages("pinned=true") %}
-<section>
-    <br />
-    <p>
-        <strong>Pinned posts:</strong>
- {% for item in pinnedPosts %}
-            <a href="{{ item.data.url }}">
-                {{ item.data.title }}{% if loop.last %}{% else %}, {% endif %}
-            </a>
-        {% endfor %}
-    </p>
-</section>
-
 {% set latestPosts = search.pages("type=posts", "date=desc", 3) %}
+{% set pinnedPosts = search.pages("pinned=true") %}
 
 <hr/>
 <footer>
     <h3>Note: </h3>
     <ul>
+
+        <li>
+            Pinned posts:</strong>
+            {% for item in pinnedPosts %} <a href="{{ item.data.url }}"> {{ item.data.title }} {% if loop.last %}{% else %}, {% endif %}</a>
+            {% endfor %}
+        </li>
         <li>
           Latest posts: 
           {% for item in latestPosts %}
-                <a href="{{ item.data.url }}">
-                    {{ item.data.title }} {% if loop.last %}{% else %}, {% endif %}
-                </a>
+                <a href="{{ item.data.url }}"> {{ item.data.title }}{% if loop.last %} {% else %}, {% endif %} </a>
             {% endfor %}
         </li>
+
         <li>Main places for: <a href="/posts">all posts</a> and <a href="/tags">all tags</a>.</li>
         <li>URL: {{ url }}</li>
         <li>By: Broset </li>
