@@ -1,5 +1,5 @@
 ---
-title: JS array tips
+title: JS array
 description: JS's example of sorting and reducing
 date: 2023-08-13T14:29:48.806Z
 tags:
