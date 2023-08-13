@@ -23,3 +23,13 @@ Anyway here are some other gnome extensions that I like:
 
 1. Clipboard Indicator
 2. Emoji Selector
+
+Everyday tools:
+
+1. Vscode: light weight code editor
+2. Jetbrains IntelliJ + Jetbrains Webstorm: For my work Java related-projects and angular projects.
+3. Flameshot: for screenshot
+4. Obsidian: personal note taking.
+5. Spotify: listen to music
+
+More will be added soon.
