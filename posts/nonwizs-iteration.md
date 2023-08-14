@@ -1,7 +1,7 @@
 ---
 title: Nonwiz's iteration
 description: Comparison from my first personal webpage until now.
-date: 2023-08-12T16:32:06.961Z
+date: 2023-08-12T05:32:00.000Z
 tags:
   - personal
 ---
