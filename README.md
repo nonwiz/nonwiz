@@ -2,6 +2,13 @@
 
 My fourth iteration, code name "nonwiz", inspired by [Sakura: minimal classless css](https://oxal.org/projects/sakura/).
 
+## Feature
+
+- Ninja-keys (Command + K) to load all the important pages
+- PageFind is now integrated with Ninja-keys allowing users to search static pages
+
+## Getting started
+
 Run Lume with `deno task serve`.
 
 ## Stats
