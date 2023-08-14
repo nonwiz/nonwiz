@@ -13,6 +13,7 @@ pinned: true
 * [Python for everyone](https://www.py4e.com/): The instructor prep really good material and explanation.
 * [Django for everyone](https://www.dj4e.com/): If you like the above, you might like this as well.
 * [Backend API development with Nodejs](https://www.freecodecamp.org/learn/back-end-development-and-apis/#managing-packages-with-npm): if you completed the above, this even much easier.
+* [JavaScript 30 days:](https://javascript30.com/) If you are clueless about DOM or how to use JS in the web, this will always be the good one to start with.
 
 **Learning platform**
 
