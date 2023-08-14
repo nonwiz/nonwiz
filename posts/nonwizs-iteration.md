@@ -33,10 +33,4 @@ Check it out [here](https://third-landing-page.vercel.app/)
 
 **Fourth**
 
-Currently, this site is fourth iteration of the above. Some ideas I have in mind for further improvement:
-
-* Add a back button that link to previous page.
-* Adding pinned posts to home page / posts / command. // still considering on this.
-* Add some margin between content and page's tags and title.
-
-If you have any good suggestions, feel free to ping me at [Gmail](mailto:bdchanbroset@gmail.com).
+Currently, this site is fourth iteration of the above.
