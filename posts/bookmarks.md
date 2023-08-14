@@ -12,6 +12,7 @@ pinned: true
 * [TheOdinProject](https://www.theodinproject.com/): Ruby on rails or JavaScript
 * [Python for everyone](https://www.py4e.com/): The instructor prep really good material and explanation.
 * [Django for everyone](https://www.dj4e.com/): If you like the above, you might like this as well.
+* [Backend API development with Nodejs](https://www.freecodecamp.org/learn/back-end-development-and-apis/#managing-packages-with-npm): if you completed the above, this even much easier.
 
 **Learning platform**
 
