@@ -1,5 +1,5 @@
 ---
-title: Dumb way to clone firestore collections.
+title: Dumb way to clone firestore collections
 description: This tutorial mainly for lazyass people who doesn't want to spend
   much time reading firebase documentation. This show way to export firestore
   project to a new firebase project.
