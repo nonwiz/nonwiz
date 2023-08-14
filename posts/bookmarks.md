@@ -60,7 +60,12 @@ pinned: true
 
 **Shorten links**
 
-* [Short link](https://dub.sh/)
+* [Shorten link](https://dub.sh/)
+
+**Headless CMS**
+
+* [DecapCMS](https://decapcms.org/): git-based markdown CMS (I find this very easy to use and start with).
+* [Tina](tina.io/): git-based markdown and mdx (react + markdown)
 
 **Tailwind components & templates:**
 
