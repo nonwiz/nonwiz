@@ -7,6 +7,12 @@ tags:
   - links
 pinned: true
 ---
+**SE training platform**
+
+* [TheOdinProject](https://www.theodinproject.com/): Ruby on rails or JavaScript
+* [Python for everyone](https://www.py4e.com/): The instructor prep really good material and explanation.
+* [Django for everyone](https://www.dj4e.com/): If you like the above, you might like this as well.
+
 **Learning platform**
 
 * [UX/UI designs](app.uxcel.com) 
