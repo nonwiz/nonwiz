@@ -6,6 +6,9 @@ My fourth iteration, code name "nonwiz", inspired by [Sakura: minimal classless 
 
 - Ninja-keys (Command + K) to load all the important pages
 - PageFind is now integrated with Ninja-keys allowing users to search static pages
+  - Search results are now assigned Hotkeys
+- Pinned posts are listed in Ninja-keys
+
 
 ## Getting started
 
