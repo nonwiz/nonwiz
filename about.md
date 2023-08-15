@@ -9,12 +9,15 @@ layout: layouts/home.njk
 
 > Debugger by day, development by night.
 
+\*\* I do develop features during day as well for my company, but most of the times are used for debugging; thus came the quote. 😖
+
 **Some other stuff I believe:**
 
 * I don't believe in pronounces.
 * Google sucks so do their frameworks! (esp. Angular, even the original founder worked on a new one Qwik, using jsx as well.) 😂
 * Accidentally override one of my git repo, if you're using --orphan, make sure to remote the original remote first before doing anything silly like me. 
 * Designer hates it when other copy/paste his works. While engineer loves to share his code base. 🤔
+* I find it cringey to hear the motivation speakers ramping nonsense on the internet.
 
 ### **Things I sucked at**
 
