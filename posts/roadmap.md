@@ -23,6 +23,7 @@ tags:
 * Add 'Comment' [*Considering*]
 * Show 'Page view' on each post
 * Add authors on each post [*Considering*]
+* Add comment section?
 
 **SEO:**
 
