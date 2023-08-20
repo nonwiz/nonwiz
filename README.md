@@ -12,7 +12,7 @@ My fourth iteration, code name "nonwiz", inspired by [Sakura: minimal classless 
 
 ## Getting started
 
-Run Lume with `deno task serve`.
+Run Lume with `deno task serve`. **Please do remove or change my analytics first xD.**
 
 ## Stats
 
