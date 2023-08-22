@@ -15,6 +15,7 @@ pinned: true
 * [Backend API development with Nodejs](https://www.freecodecamp.org/learn/back-end-development-and-apis/#managing-packages-with-npm): if you completed the above, this even much easier.
 * [JavaScript 30 days:](https://javascript30.com/) If you are clueless about DOM or how to use JS in the web, this will always be the good one to start with.
 * [TheOdinProject](https://www.theodinproject.com/): Ruby on rails or JavaScript
+* [Hyperskills](https://hyperskill.org/study-plan): Another great platform for learning (project-based learning)
 
 **Learning platform**
 
