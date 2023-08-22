@@ -2,6 +2,10 @@
 title: Best of Gnome Extensions
 description: My everyday tools for gnome
 date: 2023-08-22T07:52:28.333Z
+tags:
+  - gnome
+  - debian
+  - linux
 ---
 ## Stuff you might be interested:
 
