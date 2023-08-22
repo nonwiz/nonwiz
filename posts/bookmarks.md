@@ -1,13 +1,13 @@
 ---
 title: Bookmarks
 description: Some of my favorite links
-date: 2023-08-13T16:32:45.742Z
+date: 2023-08-22T06:58:23.615Z
 tags:
   - app-idea
   - links
 pinned: true
 ---
-**SE training platform**
+**Only worth-sharing platform for Software Engineer.**
 
 * [CS50](https://cs50.harvard.edu/x/2023/): introduction to Computer Science from Harvard (HTML, CSS, JavaScript, Git, Python, SQL, Flash, C).
 * [Python for everyone](https://www.py4e.com/): The instructor prep really good material and explanation.
