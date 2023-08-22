@@ -13,6 +13,8 @@ layout: layouts/home.njk
 
 > I'm all ear.
 
+Recent projects I worked on @[Read.cv](https://read.cv/nonwiz).
+
 ## What's up
 
 Aug 13: Additional improvement to nonwiz.dev and biocycling project.
