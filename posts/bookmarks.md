@@ -36,6 +36,7 @@ pinned: true
 * [Obsidian](https://obsidian.md/) || [Lumen:](https://uselumen.com/) Note taking app.
 * [Flameshot](https://flameshot.org/): screenshot with in-app editing.
 * [Excalidraw](excalidraw.com/): drawing on web 
+* Editing screenshot: https://shots.so/
 
 **Cool sites:**
 
