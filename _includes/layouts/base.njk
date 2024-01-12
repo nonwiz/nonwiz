@@ -27,14 +27,16 @@
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons&display=swap"
       rel="stylesheet"/>
-    <script type="module" src="https://unpkg.com/ninja-keys?module"></script>
     <script async src="https://analytics.umami.is/script.js" data-website-id="f15812f6-817e-45c8-aa53-84bf8eb74ccf" data-domains="nonwiz.dev,nonwiz.netlify.app"></script>
+    {# <script type="module" src="https://unpkg.com/ninja-keys?module"></script> #}
+    <script type="module" src="https://unpkg.com/lit-html@2.8.0/lit-html.js?module"></script>
+
   </head>
   <body>
     <button onclick="browse('/')">
      ⌂
     </button>
-    <button data-umami-event="cmd" class="cmd" onclick="openCmd()">
+    {# <button data-umami-event="cmd" class="cmd" onclick="openCmd()">
       <span>
             ⌘
           <span> + K</span>
@@ -44,7 +46,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-corner-up-left"><polyline points="9 14 4 9 9 4"/><path d="M20 20v-7a4 4 0 0 0-4-4H4"/></svg>
         </span>
         <span>click this</span>
-      </i>
+      </i> #}
 
     </nav>
 
@@ -142,7 +144,6 @@
         var sentences = content.split('. ');
         for (var i = 0; i < sentences.length; i++) {
           if (sentences[i].toLowerCase().includes(term.toLowerCase())) {
-            {# Only show 100 letters  #}
             return sentences[i].slice(0, 100);
           }
         }
