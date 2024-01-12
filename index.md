@@ -7,11 +7,7 @@ layout: layouts/home.njk
 ---
 ## Introduction
 
-✋ Just broset.
-
-*Got some half bake idea for monthly project?* 
-
-> I'm all ear.
+Just broset.
 
 Recent projects I worked on @[Read.cv](https://read.cv/nonwiz).
 
