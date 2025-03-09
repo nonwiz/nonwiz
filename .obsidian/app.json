@@ -3,6 +3,7 @@
   "showLineNumber": true,
   "attachmentFolderPath": "assets",
   "userIgnoreFilters": [
-    "_site/"
+    "_site/",
+    "_includes/"
   ]
 }

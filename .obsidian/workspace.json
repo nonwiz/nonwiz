@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "517345e6e947ca4c",
+        "id": "d868682d10da65e9",
         "type": "tabs",
         "children": [
           {
@@ -171,10 +171,14 @@
   },
   "active": "3db5dec83a39343c",
   "lastOpenFiles": [
-    "style.css~",
-    "_includes/index.vto~",
+    "_site/main.js",
+    "main.js",
+    "_site/Pasted image 20250309225301.png",
+    "assets/Pasted image 20250309225301.png",
     "posts/Okayist setup for macos.md",
     "index.md",
+    "style.css~",
+    "_includes/index.vto~",
     "_site/Pasted image 20250309211534.png",
     "assets/Pasted image 20250309211534.png",
     "assets/Pasted image 20250309173400.png",
@@ -190,8 +194,6 @@
     "_site/diary/daily/2025-03-07/index.html",
     "_site/diary/monthly/2025-03",
     "_site/diary/daily/2025-03-07",
-    "_site/diary/monthly",
-    "_site/diary/daily",
     "posts/test.md",
     "Pasted image 20250309173326.png",
     "assets/Pasted image 20250309173029.png",

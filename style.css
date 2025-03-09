@@ -1,4 +1,5 @@
 :root {
+  --background: white;
   --color: 76, 99, 119;
   --text: #4a4a4a;
 }
@@ -12,6 +13,7 @@ html {
     "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   word-wrap: break-word;
   word-break: break-word;
+  background: var(--background);
 }
 
 ol,

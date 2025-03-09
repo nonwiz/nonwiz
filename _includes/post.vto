@@ -5,22 +5,24 @@
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='white'/><text x='4' y='22' font-size='14'>NW</text></svg>">
+  <script src="/main.js"></script> 
 </head>
 <body>
-  <header>
-    <a href="/" alt="Go home">⌂</a>
-  </header>
-  <h1>{{ basename }} </h1>
-  {{ content }}
-  
+<header>
+  <a href="/" alt="Go home">⌂</a>
+</header>
+<h1>{{ basename }} </h1>
+{{ content }}
   <footer>
+  <button onclick="switchTheme()" id="theme-switcher">☀️</button>
   <hr />
   <small>
   {{date.toLocaleDateString()}} © 2025 Nonwiz. No rights reserved. CC0.
   <aside>
-    <a href="mailto:7pih2pydf@mozmail.com"> Mail </a> |
-    <a href="https://github.com/nonwiz" target="_blank">Github</a> |
-    <a href="https://x.com/itsNonwiz" target="_blank">X</a>
+    <a href="{{G.cv}}" target="_blank">CV</a> |
+    <a href="{{G.mail}}"> Mail </a> |
+    <a href="{{G.github}}" target="_blank">Github</a> |
+    <a href="{{G.x}}" target="_blank">X</a>
   </aside>
   </small>
   </footer>
