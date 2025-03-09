@@ -1,0 +1,8 @@
+{
+  "vimMode": true,
+  "showLineNumber": true,
+  "attachmentFolderPath": "assets",
+  "userIgnoreFilters": [
+    "_site/"
+  ]
+}

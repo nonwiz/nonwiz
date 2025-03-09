@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='white'/><text x='4' y='22' font-size='14'>NW</text></svg>">
+</head>
+<body>
+  {{ content }}
+
+  {{ function renderSection(pages = []) }}
+    {{ if pages.length == 0 }}
+     <p>Nothing here...</p>
+    {{ /if }}
+
+    <ol>
+    {{ for page of pages }}
+      <li>
+      <a href="{{ page.url }}">{{ page.basename }}</a>
+      </li>
+    {{ /for }}
+        </ol> 
+  {{ /function }}
+
+  <section>
+    <strong>Posts</strong>
+    {{ renderSection(search.pages("category='post'")) }} 
+  </section>
+
+  <section class="hidden">
+  <strong>Monthly</strong>
+  {{ renderSection(search.pages("category='monthly'")) }}
+  </section>
+
+  <section class="hidden">
+  <strong>Journal</strong>
+  {{ renderSection(search.pages("category='daily'")) }}
+  </section>
+
+  <footer>
+  <hr />
+  <small>
+    © 2025 Nonwiz. No rights reserved. CC0.
+  <aside>
+    <a href="https://read.cv/nonwiz" target="_blank">CV</a> |
+    <a href="mailto:7pistrongpydf@mozmail.com"> Mail </a> |
+    <a href="https://github.com/nonwiz" target="_blank">Github</a> |
+    <a href="https://x.com/itsNonwiz" target="_blank">X</a>
+  </aside>
+  </small>
+  </footer>
+
+
+  <script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.has("q") && params.get("q") === "1") {
+    sessionStorage.setItem("hidden", "0");
+  }
+
+  if (sessionStorage.getItem("hidden") === "0") {
+    document.querySelectorAll(".hidden").forEach((el) => {
+      el.classList.remove("hidden");
+      el.classList.add("show");
+    });
+  }
+});
+
+</script>
+
+</body>
+</html>
