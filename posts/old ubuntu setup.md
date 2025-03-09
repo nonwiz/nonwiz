@@ -7,8 +7,6 @@ tags:
   - debian
   - linux
 ---
-## Stuff you might be interested:
-
 * [Sound Input & Output Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 * [Blur my shell](https://extensions.gnome.org/#sort=relevance)
 * [Clipboard indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)

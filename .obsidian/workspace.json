@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Okayist setup for macos.md",
+                "file": "posts/Old Ubuntu Setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Okayist setup for macos"
+              "title": "Old Ubuntu Setup"
             }
           }
         ],
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Okayist setup for macos.md",
+                "file": "posts/Old Ubuntu Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Okayist setup for macos"
+              "title": "Backlinks for Old Ubuntu Setup"
             }
           },
           {
@@ -186,20 +186,20 @@
   },
   "active": "b7462aee1610579c",
   "lastOpenFiles": [
+    "posts/Okayist setup for macos.md",
+    "_site/posts/Windows for DEV/index.html",
+    "_site/posts/Windows for DEV",
+    "_site/posts/Old Ubuntu Setup/index.html",
+    "_site/posts/Old Ubuntu Setup",
+    "_site/posts/Okayist setup for macos/index.html",
+    "_site/posts/Okayist setup for macos",
     "posts/Old Ubuntu Setup.md",
     "index.md",
     "posts/Windows for DEV.md",
-    "posts/Okayist setup for macos.md",
     "_site/posts/okayist setup for macos/index.html",
     "_site/posts/okayist setup for macos",
     "_site/posts/old ubuntu setup/index.html",
     "_site/posts/old ubuntu setup",
-    "_site/posts/Windows for DEV/index.html",
-    "_site/posts/Windows for DEV",
-    "_site/posts/Untitled/index.html",
-    "_site/posts/Untitled",
-    "_site/posts/Best of Ubuntu/index.html",
-    "_site/posts/Best of Ubuntu",
     "_site/Pasted image 20250309225301.png",
     "assets/Pasted image 20250309225301.png",
     "_site/Pasted image 20250309211534.png",
