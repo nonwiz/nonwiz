@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Late ubuntu setup.md",
+                "file": "404.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Late ubuntu setup"
+              "title": "404"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Late ubuntu setup.md",
+                "file": "404.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Late ubuntu setup"
+              "title": "Backlinks for 404"
             }
           },
           {
@@ -169,6 +169,7 @@
   },
   "active": "4d80686bb757c755",
   "lastOpenFiles": [
+    "posts/Late ubuntu setup.md",
     "_site/posts/Late ubuntu setup/index.html",
     "_site/posts/Late ubuntu setup",
     "index.md",
@@ -179,11 +180,9 @@
     "_site/posts/Old Ubuntu Setup",
     "_site/posts/Okayist setup for macos/index.html",
     "_site/posts/Okayist setup for macos",
-    "posts/Late ubuntu setup.md",
     "posts/Windows for DEV.md",
     "_site/posts/okayist setup for macos/index.html",
     "_site/posts/okayist setup for macos",
-    "_site/posts/old ubuntu setup/index.html",
     "_site/Pasted image 20250309225301.png",
     "assets/Pasted image 20250309225301.png",
     "_site/Pasted image 20250309211534.png",

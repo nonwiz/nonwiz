@@ -5,8 +5,8 @@
 }
 
 html {
-  font-size: 1.2em;
-  padding: 10vh 10vw;
+  font-size: 2em;
+  padding: 5vh 5vw;
   line-height: 1.6;
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -14,11 +14,6 @@ html {
   word-wrap: break-word;
   word-break: break-word;
   background: var(--background);
-}
-
-ol,
-li {
-  margin-left: -0.5em;
 }
 
 h1,
@@ -34,7 +29,6 @@ h6 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   overflow-wrap: break-word;
-
   color: rgba(var(--color), 0.9);
 }
 
@@ -72,4 +66,17 @@ footer {
 
 .block {
   display: block;
+}
+
+@media (width >= 80rem) {
+  html {
+    background: green;
+    font-size: 1.2em;
+    padding: 10vh 10vw;
+  }
+
+  ol,
+  li {
+    margin-left: -0.5em;
+  }
 }
