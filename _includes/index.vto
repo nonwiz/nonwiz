@@ -15,7 +15,7 @@
   <p>Nothing here...</p>
   {{ /if }}
   <ol>
-  {{ for page of pages }}
+  {{ for page of pages.sort((a, b) => (b.pinned || false) ? 1 : -1) }}
     <li>
     <a href="{{ page.url }}">{{ page.basename }}</a>
     </li>

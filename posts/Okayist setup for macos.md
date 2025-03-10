@@ -1,3 +1,7 @@
+---
+pinned: true
+---
+
 1. [Yabai](https://github.com/koekeishiya/yabai): tiling window manager
 2. [Skhd](https://github.com/koekeishiya/skhd): hotkey daemon for macos
 3. [Spaceid](https://github.com/dshnkao/SpaceId): to display space or desktop number on topbar
