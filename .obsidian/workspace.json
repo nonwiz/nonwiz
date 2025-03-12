@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "404.md",
+                "file": "posts/Hiragana and Katakana stroke order.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "404"
+              "title": "Hiragana and Katakana stroke order"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "404.md",
+                "file": "posts/Hiragana and Katakana stroke order.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 404"
+              "title": "Backlinks for Hiragana and Katakana stroke order"
             }
           },
           {
@@ -169,11 +169,14 @@
   },
   "active": "4d80686bb757c755",
   "lastOpenFiles": [
+    "index.md",
+    "posts/Hiragana and Katakana stroke order.md",
+    "assets/Pasted image 20250310223919.png",
+    "posts/Okayist setup for macos.md",
     "posts/Late ubuntu setup.md",
+    "404.md",
     "_site/posts/Late ubuntu setup/index.html",
     "_site/posts/Late ubuntu setup",
-    "index.md",
-    "posts/Okayist setup for macos.md",
     "_site/posts/Windows for DEV/index.html",
     "_site/posts/Windows for DEV",
     "_site/posts/Old Ubuntu Setup/index.html",
@@ -189,13 +192,11 @@
     "assets/Pasted image 20250309211534.png",
     "assets/Pasted image 20250309173400.png",
     "assets/Pasted image 20250309181938.png",
-    "404.md",
     "diary/monthly/2025-03.md",
     "_site/Pasted image 20250309173400.png",
     "_site/Pasted image 20250309181938.png",
     "posts/test.md",
     "Pasted image 20250309173326.png",
-    "assets/Pasted image 20250309173029.png",
     "diary/daily/2025-03-07.md",
     "posts/Gaming.md",
     "Welcome.md",
