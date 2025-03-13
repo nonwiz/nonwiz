@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "diary/daily/2025-03-13.md",
+                "file": "posts/my window setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-13"
+              "title": "my window setup"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "diary/daily/2025-03-13.md",
+                "file": "posts/my window setup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-03-13"
+              "title": "Outline of my window setup"
             }
           },
           {
@@ -160,9 +160,19 @@
               "icon": "folder",
               "title": "Current Folder Notes"
             }
+          },
+          {
+            "id": "306983d40d98e400",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -179,18 +189,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e57634ee4c1847f1",
+  "active": "a38fbb77d5831815",
   "lastOpenFiles": [
+    "posts/my gnome extensions.md",
+    "posts/Hiragana and Katakana stroke order.md",
+    "posts/decent macos setup.md",
+    "posts/my window setup.md",
     "diary/daily/2025-03-13.md",
     "assets/template.md",
     "posts/Untitled.md",
     "Untitled.md",
     "index.md",
-    "posts/Okayist setup for macos.md",
-    "posts/Late ubuntu setup.md",
     "posts/_data.yml",
-    "posts/Hiragana and Katakana stroke order.md",
-    "posts/Windows for DEV.md",
     "diary/monthly/2025-03.md",
     "diary/_data.yml",
     "diary/daily/2025-03-07.md",

@@ -1,5 +1,7 @@
 ---
 draft: true
+tags:
+  - kana
 ---
 
 ![[Pasted image 20250310223919.png]]

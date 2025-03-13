@@ -1,11 +1,12 @@
 ---
-title: Best of Gnome Extensions
-description: My everyday tools for gnome
+title: my gnome extensions
+description: A lit of GNOME extensions I used.
 date: 2023-08-22T07:52:28.333Z
 tags:
   - gnome
   - debian
   - linux
+  - bookmark
 ---
 * [Sound Input & Output Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 * [Blur my shell](https://extensions.gnome.org/#sort=relevance)
