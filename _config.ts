@@ -13,11 +13,23 @@ site.data("G", {
   x: "https://x.com/itsNonwiz",
 });
 
-function parseObsidian(content: string) {
+function convertAllExternalLinkToNewTab(content: string) {
+  return content.replace(/(href=")([^"]+)(")/g, (_, prefix, url, suffix) => {
+    return `${prefix}${url} ${suffix} ${
+      url.includes("http") ? 'target="_blank"' : ""
+    }`;
+  });
+}
+
+function parseObsidianImages(content: string) {
   return content.replace(/!\[\[(.*?)\]\]/g, (_, filename) => {
     const cleanFilename = filename.replace(/^assets\//, "");
     return `<img src="/${encodeURIComponent(cleanFilename)}">`;
   });
+}
+
+function parseObsidian(content: string) {
+  return convertAllExternalLinkToNewTab(parseObsidianImages(content));
 }
 
 site.process([".md"], (assets) => {
