@@ -1,5 +1,5 @@
 ---
-title: Replace title here
+title: bookmarks
 url: /2025-03-13
 pinned: false
 tags:
@@ -22,3 +22,7 @@ draft: true
 
 1. Infrastructure planner or mapper?
 2. Traffic simulator from Google Map?
+
+## TO READ
+- https://simonwillison.net/2025/Mar/11/using-llms-for-code/
+- 
