@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9275936277c70f96",
+        "id": "ecf03755cd33f8a4",
         "type": "tabs",
         "children": [
           {
-            "id": "4d80686bb757c755",
+            "id": "1949c2a0eed96279",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "posts/Late ubuntu setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Late ubuntu setup"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "posts/Late ubuntu setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for Late ubuntu setup"
             }
           },
           {
@@ -150,12 +150,23 @@
               "icon": "lucide-list",
               "title": "Outline of Bearable setup"
             }
+          },
+          {
+            "id": "e57634ee4c1847f1",
+            "type": "leaf",
+            "state": {
+              "type": "current-folder-notes-view",
+              "state": {},
+              "icon": "folder",
+              "title": "Current Folder Notes"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 528.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,40 +175,42 @@
       "graph:Open graph view": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "current-folder-notes-pamphlet:Activate folder notes display": false
     }
   },
-  "active": "4d80686bb757c755",
+  "active": "1949c2a0eed96279",
   "lastOpenFiles": [
-    "posts/Hiragana and Katakana stroke order.md",
-    "index.md",
-    "assets/Pasted image 20250310223919.png",
+    "diary/monthly/2025-03.md",
+    "diary/_data.yml",
+    "diary/daily/2025-03-07.md",
+    "posts/Template.md",
+    "posts/Windows for DEV.md",
     "posts/Okayist setup for macos.md",
     "posts/Late ubuntu setup.md",
-    "404.md",
-    "_site/posts/Late ubuntu setup/index.html",
-    "_site/posts/Late ubuntu setup",
-    "_site/posts/Windows for DEV/index.html",
-    "_site/posts/Windows for DEV",
-    "_site/posts/Old Ubuntu Setup/index.html",
-    "_site/posts/Old Ubuntu Setup",
-    "_site/posts/Okayist setup for macos/index.html",
-    "_site/posts/Okayist setup for macos",
-    "posts/Windows for DEV.md",
-    "_site/posts/okayist setup for macos/index.html",
-    "_site/posts/okayist setup for macos",
+    "posts/Hiragana and Katakana stroke order.md",
+    "_site/Pasted image 20250310223919.png",
+    "_site/Pasted image 20250309173400.png",
+    "_site/Pasted image 20250309181938.png",
     "_site/Pasted image 20250309225301.png",
-    "assets/Pasted image 20250309225301.png",
     "_site/Pasted image 20250309211534.png",
+    "_site/style.css",
+    "_site/main.js",
+    "_site/diary/monthly/2025-03/index.html",
+    "_site/diary/daily/2025-03-07/index.html",
+    "_site/posts/Late ubuntu setup/index.html",
+    "_site/posts/Okayist setup for macos/index.html",
+    "_site/posts/Hiragana and Katakana stroke order/index.html",
+    "_site/posts/Windows for DEV/index.html",
+    "_site/posts/Hiragana and Katakana stroke order",
+    "index.md",
+    "assets/Pasted image 20250310223919.png",
+    "404.md",
+    "assets/Pasted image 20250309225301.png",
     "assets/Pasted image 20250309211534.png",
     "assets/Pasted image 20250309173400.png",
     "assets/Pasted image 20250309181938.png",
-    "diary/monthly/2025-03.md",
-    "_site/Pasted image 20250309173400.png",
-    "_site/Pasted image 20250309181938.png",
     "posts/test.md",
-    "Pasted image 20250309173326.png",
-    "diary/daily/2025-03-07.md",
     "posts/Gaming.md",
     "Welcome.md",
     "diary/2025-03-07.md"

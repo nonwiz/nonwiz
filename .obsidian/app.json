@@ -5,5 +5,7 @@
   "userIgnoreFilters": [
     "_site/",
     "_includes/"
-  ]
+  ],
+  "newLinkFormat": "absolute",
+  "showUnsupportedFiles": false
 }
