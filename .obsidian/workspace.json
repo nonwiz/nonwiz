@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Late ubuntu setup.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Late ubuntu setup"
+              "title": "index"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Late ubuntu setup.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Late ubuntu setup"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -181,13 +181,13 @@
   },
   "active": "1949c2a0eed96279",
   "lastOpenFiles": [
+    "posts/Late ubuntu setup.md",
     "diary/monthly/2025-03.md",
     "diary/_data.yml",
     "diary/daily/2025-03-07.md",
     "posts/Template.md",
     "posts/Windows for DEV.md",
     "posts/Okayist setup for macos.md",
-    "posts/Late ubuntu setup.md",
     "posts/Hiragana and Katakana stroke order.md",
     "_site/Pasted image 20250310223919.png",
     "_site/Pasted image 20250309173400.png",
