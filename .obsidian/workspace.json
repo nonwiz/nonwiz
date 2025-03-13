@@ -11,14 +11,14 @@
             "id": "a38fbb77d5831815",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/community-plugins.json",
+                "bFile": ".obsidian/community-plugins.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "diff",
+              "title": "Diff: community-plugins.json"
             }
           }
         ]
@@ -157,8 +157,8 @@
             "state": {
               "type": "current-folder-notes-view",
               "state": {},
-              "icon": "folder",
-              "title": "Current Folder Notes"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -180,27 +180,27 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
       "current-folder-notes-pamphlet:Activate folder notes display": false,
       "periodic-notes:Open today": false
     }
   },
   "active": "a38fbb77d5831815",
   "lastOpenFiles": [
-    "bookmarks.md",
-    "posts/my window setup.md",
-    "posts/my gnome extensions.md",
+    "posts/decent macos setup.md",
     "posts/Hiragana and Katakana stroke order.md",
+    "posts/my gnome extensions.md",
+    "posts/my window setup.md",
+    "index.md",
+    "bookmarks.md",
     "assets/template.md",
     "projects.md",
     "posts/_data.yml",
-    "posts/decent macos setup.md",
     "posts/Untitled.md",
-    "index.md",
     "diary/monthly/2025-03.md",
     "diary/_data.yml",
     "diary/daily/2025-03-07.md",
