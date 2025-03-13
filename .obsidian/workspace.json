@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/decent macos setup.md",
+                "file": "projects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "decent macos setup"
+              "title": "projects"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/decent macos setup.md",
+                "file": "projects.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of decent macos setup"
+              "title": "Outline of projects"
             }
           },
           {
@@ -191,16 +191,16 @@
   },
   "active": "a38fbb77d5831815",
   "lastOpenFiles": [
+    "posts/my window setup.md",
+    "posts/_data.yml",
+    "projects.md",
+    "assets/template.md",
+    "posts/decent macos setup.md",
     "posts/Hiragana and Katakana stroke order.md",
     "posts/my gnome extensions.md",
-    "posts/my window setup.md",
-    "posts/decent macos setup.md",
     "diary/daily/2025-03-13.md",
-    "assets/template.md",
     "posts/Untitled.md",
-    "Untitled.md",
     "index.md",
-    "posts/_data.yml",
     "diary/monthly/2025-03.md",
     "diary/_data.yml",
     "diary/daily/2025-03-07.md",
