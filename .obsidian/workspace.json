@@ -166,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 528.5
+    "width": 528.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,14 +182,16 @@
   },
   "active": "1949c2a0eed96279",
   "lastOpenFiles": [
+    "posts/Okayist setup for macos.md",
     "posts/Late ubuntu setup.md",
+    "posts/_data.yml",
+    "posts/Hiragana and Katakana stroke order.md",
+    "posts/Windows for DEV.md",
+    "posts/Template.md",
+    "index.md",
     "diary/monthly/2025-03.md",
     "diary/_data.yml",
     "diary/daily/2025-03-07.md",
-    "posts/Template.md",
-    "posts/Windows for DEV.md",
-    "posts/Okayist setup for macos.md",
-    "posts/Hiragana and Katakana stroke order.md",
     "_site/Pasted image 20250310223919.png",
     "_site/Pasted image 20250309173400.png",
     "_site/Pasted image 20250309181938.png",
@@ -202,8 +205,6 @@
     "_site/posts/Okayist setup for macos/index.html",
     "_site/posts/Hiragana and Katakana stroke order/index.html",
     "_site/posts/Windows for DEV/index.html",
-    "_site/posts/Hiragana and Katakana stroke order",
-    "index.md",
     "assets/Pasted image 20250310223919.png",
     "404.md",
     "assets/Pasted image 20250309225301.png",

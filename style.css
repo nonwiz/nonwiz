@@ -52,12 +52,9 @@ img {
   margin-top: 0px;
 }
 
-aside {
-  float: right;
-}
-
 footer {
   margin-top: 2em;
+  text-align: center;
 }
 
 .hidden {
@@ -77,5 +74,13 @@ footer {
   ol,
   li {
     margin-left: -0.5em;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  aside {
+    float: right;
   }
 }
