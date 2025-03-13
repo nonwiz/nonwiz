@@ -1,8 +1,8 @@
 ---
 title: Replace title here
 url: /template
-pinned: true
+pinned: false
 tags:
-  - general
-draft: false
+  - app-idea
+draft: true
 ---
