@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "diary/daily/2025-03-13.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of 2025-03-13"
             }
           },
           {
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 528.5,
-    "collapsed": true
+    "width": 528.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,7 +179,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a38fbb77d5831815",
+  "active": "e57634ee4c1847f1",
   "lastOpenFiles": [
     "diary/daily/2025-03-13.md",
     "assets/template.md",
