@@ -4,7 +4,7 @@ layout: index.vto
 ---
 
 > broset, ប្រសិទ្ធិ, ぶろせと  
-> soft eng, certified fiction addict.
+> soft eng, fiction addict.
 
 **2025 goals**: 
 -  300 hours learning kana.

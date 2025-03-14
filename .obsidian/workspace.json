@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f47f84fa28ff8c87",
+        "id": "6b78038c744772d4",
         "type": "tabs",
         "children": [
           {
-            "id": "a38fbb77d5831815",
+            "id": "925e3c7bce9553fa",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/community-plugins.json",
-                "bFile": ".obsidian/community-plugins.json",
-                "aRef": ""
+                "file": "index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: community-plugins.json"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -176,7 +176,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 528.5
+    "width": 528.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,16 +190,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a38fbb77d5831815",
+  "active": "925e3c7bce9553fa",
   "lastOpenFiles": [
-    "posts/decent macos setup.md",
     "posts/Hiragana and Katakana stroke order.md",
-    "posts/my gnome extensions.md",
-    "posts/my window setup.md",
-    "index.md",
     "bookmarks.md",
+    "index.md",
     "assets/template.md",
+    "posts/decent macos setup.md",
+    "posts/my window setup.md",
     "projects.md",
+    "posts/my gnome extensions.md",
     "posts/_data.yml",
     "posts/Untitled.md",
     "diary/monthly/2025-03.md",
