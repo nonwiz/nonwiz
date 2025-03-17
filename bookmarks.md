@@ -6,6 +6,14 @@ tags:
   - app-idea
 draft: true
 ---
+## Local bin
+
+Accessible file sharing on local network.
+
+## Relax ambient sound
+
+Play some noise, setting alarm
+
 ## Obsidian Extensions
 
 1. Figure out what people request the feature or issue with the most
