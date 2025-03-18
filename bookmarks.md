@@ -6,6 +6,9 @@ tags:
   - app-idea
 draft: true
 ---
+## terminal related apps
+- https://terminal-apps.dev/
+
 ## Local bin
 
 Accessible file sharing on local network.
