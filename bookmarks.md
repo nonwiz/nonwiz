@@ -9,6 +9,8 @@ draft: true
 ## terminal related apps
 - https://terminal-apps.dev/
 
+## Learn
+- WebRTC?
 ## Local bin
 
 Accessible file sharing on local network.
@@ -39,4 +41,4 @@ Play some noise, setting alarm
 
 ## TO READ
 - https://simonwillison.net/2025/Mar/11/using-llms-for-code/
-- 
+- [Github commenting system](https://utteranc.es/)
