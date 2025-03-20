@@ -22,6 +22,7 @@ Simple blogging site with DecapCMS. Built with Next.js + ContentLayer + DecapCMS
 **Entresure** - 2023\
 Insurance-claim management application.
 
+
 ## Side Projects
 ---
 
@@ -49,6 +50,7 @@ Ethereum-based product ID storage using Brownie, Vyper, Infura, Ganache, and Dja
 **Traffic Optimizer** - 2021\
 ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and ESP32.
 
+
 ## Work Experience
 ---
 
@@ -70,6 +72,7 @@ ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and
 - Helped implement e-learning solutions during COVID-19
 - Developed tools for university operations
 
+
 ## Volunteering
 ---
 
@@ -78,6 +81,7 @@ ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and
 - Manages global pages, posts, and plugins
 - Troubleshoots plugin conflicts
 - Develops standalone Next.js + Firebase solutions
+
 
 ## Education
 ---
