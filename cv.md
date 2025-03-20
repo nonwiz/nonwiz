@@ -88,12 +88,11 @@ ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and
 ## Education
 ---
 
-**[Minoring in Bioscience](https://apiu.edu)** - *Asia-Pacific International University*, 2021 — 2022.
+**[Minoring in Bioscience](https://apiu.edu)** - *Asia-Pacific International University*, 2021 — 2022.  
 Relevant Coursework: General Bio I & II, Community Gardening, Calculus I & II, General Physics
 
 **[Bachelor of Science in Information Technology](https://apiu.edu)** - *Asia-Pacific International University*, 2018 — 2022.  
 Relevant Coursework: System Analysis and Design, OOP, Data Structures & Algorithms, Database Admin, AI, Ethics, Calculus I & II, Statistics with R
 
-**[Backend Development APIs](https://www.freecodecamp.org/certification/nonwiz/back-end-development-and-apis)** - *FreeCodeCamp*, 2021. 
-
+**[Backend Development APIs](https://www.freecodecamp.org/certification/nonwiz/back-end-development-and-apis)** - *FreeCodeCamp*, 2021.  
 Learned Node.js, Express.js, MongoDB, and Mongoose.
