@@ -4,10 +4,6 @@ pinned: false
 draft: false
 layout: post.vto
 ---
-# Nonwiz's Profile
-
-
-
 ## Projects
 
 **System for Purchasing and Inventory** - Asia-Pacific International University, 2025
