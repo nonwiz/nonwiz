@@ -56,18 +56,18 @@ ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and
 ## Work Experience
 ---
 
-**[Software Engineer @ AlpegaTMS](https://www.alpegagroup.com/en/)** - Thailand, 2022 — Present\
+**[Software Engineer @ AlpegaTMS](https://www.alpegagroup.com/en/)** - Thailand, 2022 — Present. 
 
 - Agile team member for TMS cloud platform
 - Develops solutions for complex logistics needs
 - Refactors existing code for technical excellence
 
-**[Project Consultant @ MORU Tropical Health Network](https://www.tropmedres.ac)** - Thailand, 2023 — Present\
+**[Project Consultant @ MORU Tropical Health Network](https://www.tropmedres.ac)** - Thailand, 2023 — Present. 
 
 - Develops a web app for dynamic form submission and review
 - Manages MDM controls over hundreds of tablets
 
-**[Technical Assistant @ Asia-Pacific International University](http://www.apiu.edu)** - Thailand, 2018 — 2022\
+**[Technical Assistant @ Asia-Pacific International University](http://www.apiu.edu)** - Thailand, 2018 — 2022. 
 
 - Maintained and improved the university website
 - Provided tech support for faculty and students
@@ -78,7 +78,7 @@ ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and
 ## Volunteering
 ---
 
-**[Software Developer @ Bibleway](https://bibleway.de/)** - Germany, 2022 — Present\
+**[Software Developer @ Bibleway](https://bibleway.de/)** - Germany, 2022 — Present. 
 - Maintains WordPress platform
 - Manages global pages, posts, and plugins
 - Troubleshoots plugin conflicts
@@ -88,11 +88,11 @@ ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and
 ## Education
 ---
 
-**[Minoring in Bioscience](https://apiu.edu)** - Asia-Pacific International University, 2021 — 2022\
+**[Minoring in Bioscience](https://apiu.edu)** - Asia-Pacific International University, 2021 — 2022. 
 Relevant Coursework: General Bio I & II, Community Gardening, Calculus I & II, General Physics
 
-**[Bachelor of Science in Information Technology](https://apiu.edu)** - Asia-Pacific International University, 2018 — 2022\
+**[Bachelor of Science in Information Technology](https://apiu.edu)** - Asia-Pacific International University, 2018 — 2022. 
 Relevant Coursework: System Analysis and Design, OOP, Data Structures & Algorithms, Database Admin, AI, Ethics, Calculus I & II, Statistics with R
 
-**[Backend Development APIs](https://www.freecodecamp.org/certification/nonwiz/back-end-development-and-apis)** - FreeCodeCamp, 2021\
+**[Backend Development APIs](https://www.freecodecamp.org/certification/nonwiz/back-end-development-and-apis)** - FreeCodeCamp, 2021. 
 Learned Node.js, Express.js, MongoDB, and Mongoose.
