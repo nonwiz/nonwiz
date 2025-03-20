@@ -28,7 +28,7 @@ Insurance-claim management application.
 ## Side Projects
 ---
 
-**[Tweets](http://tweets.nonwiz.dev/)** - 2023\
+**Tweets** - 2023\
 Renders scraped tweets from Apify for embedding in Wix/WordPress without subscriptions.
 
 **[Instafetcher](https://github.com/nonwiz/instafetcher)** - 2023\
