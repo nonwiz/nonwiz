@@ -6,19 +6,19 @@ layout: post.vto
 ---
 ## Projects
 ---
-[**Bhygeo - Bibleway**](https://bhygeo.bibleway.de/), 2025 \
+[**Bhygeo**](https://bhygeo.bibleway.de/)- *Bibleway*,  2025 \
 Educational web app for managing patient info and RBTI diagnoses, with result chart visualization.
 
-**System for Purchasing and Inventory** - Asia-Pacific International University, 2025\
+**System for Purchasing and Inventory** - *Asia-Pacific International University*, 2025\
 Web app for managing inventory and order procurement with multi-user decision-making.
 
-**[Bibleway Website](https://www.bibleway.de/en)** - Bibleway, 2024\
+**[Bibleway Website](https://www.bibleway.de/en)** - *Bibleway*, 2024\
 Non-profit institution website. Built with Astro + DecapCMS.
 
-**Biocycling Borneo** - Bibleway, 2023\
+**Biocycling Borneo** - *Bibleway*, 2023\
 A web app for booking bicycle tours in Borneo Island, Malaysia. Built with Next.js + Convex + DecapCMS.
 
-**Blogging** - Azmo, 2023\
+**Blogging** - *Azmo*, 2023\
 Simple blogging site with DecapCMS. Built with Next.js + ContentLayer + DecapCMS + Shadcn/ui + Tailwind.
 
 **Entresure** - 2023\
@@ -56,18 +56,18 @@ ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and
 ## Work Experience
 ---
 
-**[Software Engineer at AlpegaTMS](https://www.alpegagroup.com/en/)** - Thailand, 2022 — Present\
+**[Software Engineer @ AlpegaTMS](https://www.alpegagroup.com/en/)** - Thailand, 2022 — Present\
 
 - Agile team member for TMS cloud platform
 - Develops solutions for complex logistics needs
 - Refactors existing code for technical excellence
 
-**[Project Consultant at MORU Tropical Health Network](https://www.tropmedres.ac)** - Thailand, 2023 — Present\
+**[Project Consultant @ MORU Tropical Health Network](https://www.tropmedres.ac)** - Thailand, 2023 — Present\
 
 - Develops a web app for dynamic form submission and review
 - Manages MDM controls over hundreds of tablets
 
-**[Technical Assistant at Asia-Pacific International University](http://www.apiu.edu)** - Thailand, 2018 — 2022\
+**[Technical Assistant @ Asia-Pacific International University](http://www.apiu.edu)** - Thailand, 2018 — 2022\
 
 - Maintained and improved the university website
 - Provided tech support for faculty and students
@@ -78,7 +78,7 @@ ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and
 ## Volunteering
 ---
 
-**[Web Developer at Bibleway](https://bibleway.de/)** - Germany, 2022 — Present\
+**[Software Developer @ Bibleway](https://bibleway.de/)** - Germany, 2022 — Present\
 - Maintains WordPress platform
 - Manages global pages, posts, and plugins
 - Troubleshoots plugin conflicts
