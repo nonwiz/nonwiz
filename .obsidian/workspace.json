@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "cv.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "cv"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 338.5,
+    "collapsed": true
   },
   "right": {
     "id": "89f8801c35fe0992",
@@ -192,13 +193,15 @@
   },
   "active": "17ec8211af0d9e9e",
   "lastOpenFiles": [
+    "assets/template.md",
+    "cv.md",
+    "index.md",
+    "cv.md",
     "posts/Using Reactjs.md",
     "bookmarks.md",
     "404.md",
-    "index.md",
     "projects.md",
     "posts/Hiragana and Katakana stroke order.md",
-    "assets/template.md",
     "posts/decent macos setup.md",
     "posts/my window setup.md",
     "posts/my gnome extensions.md",
