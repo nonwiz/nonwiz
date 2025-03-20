@@ -6,9 +6,11 @@ layout: post.vto
 ---
 ## Projects
 ---
+[Bhygeo - Bibleway](https://bhygeo.bibleway.de/), 2025 \
+Educational web app for managing patient info and RBTI diagnoses, with result chart visualization.
 
 **System for Purchasing and Inventory** - Asia-Pacific International University, 2025\
-Web app for managing inventory and order request procurement with multi-user decision-making.
+Web app for managing inventory and order procurement with multi-user decision-making.
 
 **[Bibleway Website](https://www.bibleway.de/en)** - Bibleway, 2024\
 Non-profit institution website. Built with Astro + DecapCMS.
