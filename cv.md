@@ -3,7 +3,7 @@ title: CV
 url: /cv
 pinned: false
 tags: 
-draft: true
+draft: false
 category: page
 ---
 ## Profile
