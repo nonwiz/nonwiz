@@ -1,6 +1,5 @@
 ---
 title: CV
-url: /cv
 pinned: false
 draft: false
 layout: post.vto
