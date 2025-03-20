@@ -1,17 +1,8 @@
 import lume from "lume/mod.ts";
-
 const site = lume();
 site.copy("assets", ".");
 site.copy("style.css");
 site.copy("main.js");
-
-site.data("G", {
-  cv: "https://read.cv/nonwiz",
-  title: "Nonwiz",
-  mail: "mailto:7pistrongpydf@mozmail.com",
-  github: "https://github.com/nonwiz",
-  x: "https://x.com/itsNonwiz",
-});
 
 function convertAllExternalLinkToNewTab(content: string) {
   return content.replace(/(href=")([^"]+)(")/g, (_, prefix, url, suffix) => {

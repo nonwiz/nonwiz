@@ -5,11 +5,17 @@
       "md",
       "txt",
       "yaml",
-      "yml"
+      "yml",
+      "json"
     ]
   },
   "configIsValid": true,
-  "errors": {},
+  "errors": {
+    "": "Could not register extension: '' to view type: markdown.  is already registered to markdown.",
+    "txt": "Could not register extension: 'txt' to view type: markdown. txt is already registered to markdown.",
+    "yaml": "Could not register extension: 'yaml' to view type: markdown. yaml is already registered to markdown.",
+    "yml": "Could not register extension: 'yml' to view type: markdown. yml is already registered to markdown."
+  },
   "allowMdOverride": false,
   "mobileSettings": {
     "enabled": false,
