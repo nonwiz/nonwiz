@@ -19,15 +19,15 @@ Non-profit institution website. Built with Astro + DecapCMS.
 **Biocycling Borneo** - Bibleway, 2023
 A web app for booking bicycle tours in Borneo Island, Malaysia. Built with Next.js + Convex + DecapCMS.
 
-**JsonGrid** - Nonwiz, 2023
-Easily visualize JSON objects in table form.
-
 **Blogging** - Azmo, 2023
 Simple blogging site with DecapCMS. Built with Next.js + ContentLayer + DecapCMS + Shadcn/ui + Tailwind.
 
 **Entresure** - 2023
 Insurance-claim management application.
 ## Side Projects
+
+**JsonGrid** - Nonwiz, 2023
+Easily visualize JSON objects in table form.
 
 **[Tweets](http://tweets.nonwiz.dev/)** - 2023
 Renders scraped tweets from Apify for embedding in Wix/WordPress without subscriptions.
