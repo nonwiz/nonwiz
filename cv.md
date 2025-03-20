@@ -5,6 +5,7 @@ pinned: false
 tags: 
 draft: false
 category: page
+layout: post.vto
 ---
 ## Profile
 
