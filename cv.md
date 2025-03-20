@@ -6,7 +6,7 @@ layout: post.vto
 ---
 ## Projects
 ---
-[Bhygeo - Bibleway](https://bhygeo.bibleway.de/), 2025 \
+[**Bhygeo - Bibleway**](https://bhygeo.bibleway.de/), 2025 \
 Educational web app for managing patient info and RBTI diagnoses, with result chart visualization.
 
 **System for Purchasing and Inventory** - Asia-Pacific International University, 2025\
@@ -23,8 +23,8 @@ Simple blogging site with DecapCMS. Built with Next.js + ContentLayer + DecapCMS
 
 **Entresure** - 2023\
 Insurance-claim management application.
-
-
+  
+  
 ## Side Projects
 ---
 
