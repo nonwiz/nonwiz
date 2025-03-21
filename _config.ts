@@ -1,8 +1,16 @@
 import lume from "lume/mod.ts";
 const site = lume();
-site.copy("assets", ".");
+site.copy("assets");
 site.copy("style.css");
 site.copy("main.js");
+
+const BASE_PATH = "/" as const;
+
+function prependBasePathToAssets(content: string, basePath: string) {
+  return content.replace(/(src|href)="\/?([^"]+)"/g, (_, attr, path) => {
+    return `${attr}="${basePath}${path.replace(/^\/?/, "")}"`;
+  });
+}
 
 function convertAllExternalLinkToNewTab(content: string) {
   return content.replace(/(href=")([^"]+)(")/g, (_, prefix, url, suffix) => {
@@ -20,12 +28,15 @@ function parseObsidianImages(content: string) {
 }
 
 function parseObsidian(content: string) {
-  return convertAllExternalLinkToNewTab(parseObsidianImages(content));
+  return prependBasePathToAssets(
+    convertAllExternalLinkToNewTab(parseObsidianImages(content)),
+    BASE_PATH
+  );
 }
 
 site.process([".md"], (assets) => {
   for (const asset of assets) {
-    asset.content = parseObsidian(asset.content);
+    asset.content = parseObsidian(asset.content as string);
   }
 });
 
