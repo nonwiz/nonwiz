@@ -1,9 +1,13 @@
 ---
-title: my gnome extensions
+title: Replace title here
 description: A lit of GNOME extensions I used.
 date: 2023-08-22T07:52:28.333Z
 tags:
   - bookmark
+  - app-idea
+pinned: false
+draft: true
+category: post
 ---
 * [Sound Input & Output Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 * [Blur my shell](https://extensions.gnome.org/#sort=relevance)
