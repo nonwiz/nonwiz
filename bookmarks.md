@@ -5,6 +5,7 @@ pinned: false
 tags:
   - app-idea
 draft: true
+type: page
 ---
 ## terminal related apps
 - https://terminal-apps.dev/

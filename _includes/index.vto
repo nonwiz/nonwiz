@@ -17,7 +17,7 @@
   <ol>
   {{ for page of pages.sort((a, b) => (b.pinned || false) ? 1 : -1) }}
     <li>
-    <a href="{{ page.url }}">{{ page.basename }}</a>
+    <a href="{{ page.url }}">{{ page.title || page.basename }}</a>
     </li>
   {{ /for }}
   </ol> 
@@ -25,7 +25,7 @@
 
   <section>
     <strong>Posts</strong>
-    {{ renderSection(search.pages("category='post'")) }} 
+    {{ renderSection(search.pages("type='post'")) }} 
   </section>
 
   <section class="hidden">

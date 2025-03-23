@@ -1,12 +1,12 @@
 ---
-title: Replace title here
+title: my gnome extensions
 description: A lit of GNOME extensions I used.
 date: 2023-08-22T07:52:28.333Z
 tags:
   - bookmark
   - app-idea
 pinned: false
-draft: true
+draft: false
 category: post
 ---
 * [Sound Input & Output Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)

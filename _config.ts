@@ -15,6 +15,9 @@ function prependBasePathToAssets(content: string, basePath: string) {
     /(src|href)="\/?([^"]+)"/g,
     (_, attr, path: string) => {
       path = path.trim();
+      if (/^(\/|#|data)/.test(path)) {
+        return `${attr}="${path}"`;
+      }
       if (path.startsWith("http")) {
         return `${attr}="${path}" target="_blank"`;
       }

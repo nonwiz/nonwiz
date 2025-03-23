@@ -1,7 +1,8 @@
 ---
 title: 
 pinned: false
-tags: []
+tags: 
 draft: true
 category: post
+type: post
 ---
