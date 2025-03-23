@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "11e9f69a53e73c7e",
+        "id": "31a6638fce57e4d2",
         "type": "tabs",
         "children": [
           {
-            "id": "cb8a4c744041b299",
+            "id": "8750a436b950da29",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/Hiragana and Katakana stroke order.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Hiragana and Katakana stroke order"
+              "title": "New tab"
             }
           }
         ]
@@ -190,10 +186,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "cb8a4c744041b299",
+  "active": "8750a436b950da29",
   "lastOpenFiles": [
-    "posts/my gnome extensions.md",
     "posts/Hiragana and Katakana stroke order.md",
+    "_site/posts/Hiragana and Katakana stroke order/index.html",
+    "_site/posts/Hiragana and Katakana stroke order",
+    "posts/my gnome extensions.md",
     "posts/decent macos setup.md",
     "posts/_data.yml",
     "posts/Using Reactjs.md",
@@ -219,8 +217,6 @@
     "posts/TIme lo.md",
     "cv.md",
     "templates",
-    "_site/posts/Untitled/index.html",
-    "_site/posts/Untitled",
     "_site/assets/template.md",
     "_site/assets/Pasted image 20250321171721.png",
     "_site/assets/Pasted image 20250310223919.png",
