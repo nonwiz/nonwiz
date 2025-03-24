@@ -1,7 +1,7 @@
 ---
 title: my gnome extensions
 description: A lit of GNOME extensions I used.
-date: 2023-08-22T07:52:28.333Z
+date: 2023-08-21
 tags:
   - bookmark
   - app-idea

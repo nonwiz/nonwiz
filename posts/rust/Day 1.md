@@ -1,5 +1,5 @@
 ---
-title: Day 1
+title: rust, day 1
 pinned: false
 tags: 
 draft: false

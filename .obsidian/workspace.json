@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5,
-    "collapsed": true
+    "width": 338.5
   },
   "right": {
     "id": "89f8801c35fe0992",
@@ -193,8 +192,18 @@
   },
   "active": "8750a436b950da29",
   "lastOpenFiles": [
-    "posts/logs/learning-rust.md",
+    "posts/decent macos setup.md",
+    "posts/my window setup.md",
+    "_site/posts/rust/Day 1/index.html",
+    "_site/posts/rust/Day 1",
+    "_site/posts/rust",
+    "posts/Remote desktop.md",
+    "posts/my gnome extensions.md",
+    "posts/Hiragana and Katakana stroke order.md",
+    "templates/post.md",
+    "_data.json",
     "posts/rust/Day 1.md",
+    "posts/logs/learning-rust.md",
     "Untitled.md",
     "posts/rust/day-0.md",
     "_site/posts/logs/learning-rust/index.html",
@@ -203,23 +212,13 @@
     "_site/posts/logs/Untitled",
     "_site/posts/logs",
     "posts/logs",
-    "posts/Hiragana and Katakana stroke order.md",
-    "_site/posts/Hiragana and Katakana stroke order/index.html",
-    "_site/posts/Hiragana and Katakana stroke order",
-    "posts/my gnome extensions.md",
-    "posts/decent macos setup.md",
-    "posts/_data.yml",
     "posts/Using Reactjs.md",
-    "posts/my window setup.md",
-    "_site/posts/my gnome extensions/index.html",
     "templates/page.md",
-    "templates/post.md",
     "projects.md",
     "index.md",
     "bookmarks.md",
     "404.md",
     "posts/Time logger.md",
-    "posts/Remote desktop.md",
     "assets/Pasted image 20250321171721.png",
     "assets/Pasted image 20250310223919.png",
     "assets/Pasted image 20250309225301.png",
@@ -237,7 +236,6 @@
     "diary/monthly/2025-03.md",
     "diary/daily/2025-03-07.md",
     "posts/test.md",
-    "posts/Gaming.md",
-    "Welcome.md"
+    "posts/Gaming.md"
   ]
 }

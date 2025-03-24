@@ -15,7 +15,11 @@
   <p>Nothing here...</p>
   {{ /if }}
   <ol>
-  {{ for page of pages.sort((a, b) => (b.pinned || false) ? 1 : -1) }}
+  {{ for page of pages.sort((a, b) => {
+      if (b.pinned || false) return 1;
+      if (a.pinned || false) return -1;
+      return new Date(b.date) - new Date(a.date);
+    }) }}
     <li>
     <a href="{{ page.url }}">{{ page.title || page.basename }}</a>
     </li>
