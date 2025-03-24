@@ -61,6 +61,28 @@ println!(
 println!("{person1}: what's up? {person2} replied, 'Nothing much, what about you? {person1}'", person1="John", person2="Susan")
 ```
 
+### Pad start
+```rust
+println!("{:>10}", "John")
+// Result, min width of 10 characters including text within:
+//    John 
+
+println!("{name:>5}", name="John")
+//  John
+```
+### Pad end
+```rust
+println!("{10}")
+```
+
+### Pad with placeholder
+```rust
+println!("{balance:0>5}", balance=6)
+println!("{balance:X<5}", balance=7)
+
+// 000006
+// 7XXXXX
+```
 
 
 
