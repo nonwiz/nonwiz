@@ -3,7 +3,7 @@ pinned: false
 title: decent macOS setup
 tags:
   - bookmark
-date: 2025-03-24
+date: 2025-03-17
 ---
 
 1. [Yabai](https://github.com/koekeishiya/yabai): tiling window manager
