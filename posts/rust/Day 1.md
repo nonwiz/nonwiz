@@ -6,7 +6,7 @@ draft: false
 category: rust
 type: post
 ---
-> 99% content here taken from links below:
+> Just dumping it here by hand so I can learn, 99% content here taken from links below:
 
 Ref: https://doc.rust-lang.org/rust-by-example/hello.html and https://google.github.io/comprehensive-rust/welcome-day-1.html
 # Hello world
