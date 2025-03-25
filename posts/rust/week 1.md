@@ -8,7 +8,7 @@ type: post
 ---
 > Just dumping it here by hand so I can learn, 99% content here taken from links below:
 
-Ref: https://doc.rust-lang.org/rust-by-example/hello.html and https://google.github.io/comprehensive-rust/welcome-day-1.html
+Ref: [Rust by example](https://doc.rust-lang.org/rust-by-example/hello.html) , [Comprehensive rust](https://google.github.io/comprehensive-rust/welcome-day-1.html) , [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024)
 # Hello world
 
 ```rust
@@ -222,3 +222,25 @@ fn main() {
 ## Others
 
 `#[allow(dead_code)]` is an [attribute](https://doc.rust-lang.org/rust-by-example/attribute.html) which only applies to the module after it.
+
+## Types and values
+
+By default, variable is immutable, `mut` to let it mutable.
+
+### Values
+
+Built-in types and syntax for literal values
+
+|                        | Types                          | Literals               |
+| ---------------------- | ------------------------------ | ---------------------- |
+| Signed integers        | i8, i16, i32, i64, i128, isize | -10, 0, 1_000, 123_i64 |
+| Unsigned integers      | u8, u16, u32, u64, u128, usize | 0, 123, 10_u16         |
+| Floating point numbers | f32, f64                       | 3.14, -10.0e20, 2_f32  |
+| Unicode scalar values  | char                           | 'a', '$', '∞'          |
+| Booleans               | bool                           | true, false            |
+Types have widths as follows:
+- `iN`, `uN`, `fN` are *N* bits wide,
+- `isize` and `usize` are the width of a pointer,
+- `char` is 32 bits wide,
+- `bool` is 8 bits wide.
+
