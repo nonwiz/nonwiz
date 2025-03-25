@@ -53,11 +53,16 @@ a:hover {
   justify-content: space-between;
 }
 
-blockquote {
+blockquote,
+pre {
   background: rgba(var(--color), 0.2);
   padding: 0 0.5em;
   margin-left: 0;
   margin-right: 0;
+  text-wrap: balance;
+}
+
+blockquote {
   border-left: 4px solid rgba(var(--color), 0.6);
   font-style: italic;
 }

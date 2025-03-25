@@ -12,6 +12,7 @@ type: page
 
 ## Learn
 - WebRTC?
+- LLM: https://bbycroft.net/llm
 ## Local bin
 
 Accessible file sharing on local network.
