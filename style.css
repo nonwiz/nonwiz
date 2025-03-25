@@ -53,6 +53,10 @@ a:hover {
   justify-content: space-between;
 }
 
+code:not(pre code) {
+  background: rgba(var(--color), 0.1);
+}
+
 blockquote,
 pre {
   background: rgba(var(--color), 0.2);
