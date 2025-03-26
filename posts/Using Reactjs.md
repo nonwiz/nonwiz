@@ -38,3 +38,14 @@ What's the diff component vs javascript function?
 
 ## Conditional Render
 ## Rending List of Component
+1. Always have key property
+2. 
+
+```js
+products.map(p => <li>{p.title + "_" + p.id}</li>)
+[
+ <li>Cabbage_1</li>,
+ <li>Garlic_2</li>,
+ <li>Apple_3</li>
+]
+```
