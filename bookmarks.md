@@ -5,6 +5,7 @@ tags:
   - app-idea
 draft: false
 type: page
+layout: post.vto
 ---
 ## Programming Resources
 
