@@ -1,6 +1,5 @@
 ---
 title: bookmarks
-url: /2025-03-13
 pinned: false
 tags:
   - app-idea
