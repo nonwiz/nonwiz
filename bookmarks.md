@@ -3,7 +3,7 @@ title: bookmarks
 pinned: false
 tags:
   - app-idea
-draft: false
+draft: true
 type: page
 layout: post.vto
 ---

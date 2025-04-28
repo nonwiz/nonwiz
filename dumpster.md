@@ -38,6 +38,11 @@ Gif + Dialog dialog
 
 Play some noise, setting alarm
 
+## Gitlab Changes searcher
+
+## AI Whiteboard Bg generator
+Maybe let user put some text in that white board or photo, then we put it in the main background.
+
 ## Obsidian Extensions
 
 1. Figure out what people request the feature or issue with the most
