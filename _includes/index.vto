@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='white'/><text x='4' y='22' font-size='14'>NW</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='white'/><text x='4' y='22' font-size='14'>សិទ្ធិ</text></svg>">
   <script src="/main.js"></script> 
 </head>
 <body>
@@ -30,16 +30,6 @@
   <section>
     <strong>Posts</strong>
     {{ renderSection(search.pages("type='post'")) }} 
-  </section>
-
-  <section class="hidden">
-  <strong>Monthly</strong>
-  {{ renderSection(search.pages("category='monthly'")) }}
-  </section>
-
-  <section class="hidden">
-  <strong>Journal</strong>
-  {{ renderSection(search.pages("category='daily'")) }}
   </section>
 
 <footer>
