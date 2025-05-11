@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_data.json",
+                "file": "posts/rust/attempt 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_data"
+              "title": "attempt 1"
             }
           }
         ]
@@ -190,8 +190,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "584791d829826742",
+  "active": "1793c9af491a5ef5",
   "lastOpenFiles": [
+    "posts/logs/learning-rust.md",
+    "posts/logs/learning-kana.md",
+    "posts/kana/Vocab.md",
+    "posts/macOS.md",
+    "posts/windows.md",
+    "templates/post.md",
+    "templates/page.md",
+    "_data.json",
+    "dumpster.md",
+    "posts/Time logger.md",
     "_site/posts/rust/attempt 1/index.html",
     "_site/posts/rust/attempt 1",
     "_site/posts/gnome/index.html",
@@ -204,25 +214,14 @@
     "assets/Pasted image 20250309225301.png",
     "assets/Pasted image 20250310223919.png",
     "posts/rust/attempt 1.md",
-    "posts/windows.md",
-    "templates/page.md",
-    "templates/post.md",
     "bookmarks.md",
     "cv.md",
     "404.md",
-    "_data.json",
-    "posts/Time logger.md",
-    "posts/macOS.md",
     "posts/gnome.md",
     "posts/_data.yml",
-    "posts/logs/learning-rust.md",
-    "posts/logs/learning-kana.md",
-    "posts/kana/Vocab.md",
     "posts/Hiragana and Katakana stroke order.md",
     "posts/Remote desktop.md",
     "posts/Using Reactjs.md",
-    "dumpster.md",
-    "deno.json",
     "posts/Untitled.md",
     "Seminar.md",
     "diary/daily/2025-03-07.md",
