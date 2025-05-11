@@ -18,7 +18,7 @@ function prependBasePathToAssets(content: string, basePath: string) {
       if (/^(\/|#|data)/.test(path)) {
         return `${attr}="${path}"`;
       }
-      if (path.startsWith("http")) {
+      if (path.startsWith("http") || path.startsWith("mailto")) {
         return `${attr}="${path}" target="_blank"`;
       }
       if (path.endsWith(".md")) {
