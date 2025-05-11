@@ -62,7 +62,7 @@ ESP32 prototype for easing traffic congestion. Built with Micropython, MQTT, and
 - Develops solutions for complex logistics needs
 - Refactors existing code for technical excellence
 
-**[Project Consultant @ MORU Tropical Health Network](https://www.tropmedres.ac)** - Thailand, 2023 — Present. 
+**[Project Consultant @ MORU Tropical Health Network](https://www.tropmedres.ac)** - Thailand, 2023 — April 2025. 
 
 - Develops a web app for dynamic form submission and review
 - Manages MDM controls over hundreds of tablets

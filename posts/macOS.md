@@ -1,6 +1,6 @@
 ---
 pinned: false
-title: decent macOS setup
+title: macOS
 tags:
   - bookmark
 date: 2025-03-17

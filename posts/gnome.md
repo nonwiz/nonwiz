@@ -1,5 +1,5 @@
 ---
-title: my gnome extensions
+title: gnome
 description: A lit of GNOME extensions I used.
 date: 2023-08-21
 tags:

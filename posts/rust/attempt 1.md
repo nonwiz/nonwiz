@@ -1,5 +1,5 @@
 ---
-title: rust, week 1
+title: rust, attempt 1
 pinned: false
 tags: 
 draft: false
