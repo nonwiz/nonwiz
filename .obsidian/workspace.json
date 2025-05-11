@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "_data.json",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_data"
             }
           }
         ]
@@ -192,6 +192,7 @@
   },
   "active": "584791d829826742",
   "lastOpenFiles": [
+    "index.md",
     "assets/Pasted image 20250309225301.png",
     "assets/Pasted image 20250310223919.png",
     "posts/rust/attempt 1.md",
@@ -213,7 +214,6 @@
     "posts/Remote desktop.md",
     "posts/Using Reactjs.md",
     "dumpster.md",
-    "index.md",
     "deno.json",
     "posts/kana",
     "posts/Untitled.md",
