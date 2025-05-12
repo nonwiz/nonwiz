@@ -4,7 +4,7 @@ layout: index.vto
 ---
 
 > broset, ប្រសិទ្ធិ, ぶろせと  
-> soft eng, still seeker, minimalist.
+> soft eng, still seeker
 
 **2025 goals**: 
 - learn kana and rust

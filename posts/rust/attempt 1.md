@@ -244,3 +244,13 @@ Types have widths as follows:
 - `char` is 32 bits wide,
 - `bool` is 8 bits wide.
 
+## Assert EQ
+```rust
+let x = 3.14;
+let y = 10;
+assert_eq!(x, y)
+// error: expected floating-point number, found interger.
+```
+
+
+

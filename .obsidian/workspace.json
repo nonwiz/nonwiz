@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/rust/attempt 1.md",
+                "file": "posts/logs/learning-rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "attempt 1"
+              "title": "learning-rust"
             }
           }
         ]
@@ -190,11 +190,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "1793c9af491a5ef5",
+  "active": "584791d829826742",
   "lastOpenFiles": [
+    "posts/rust/attempt 1.md",
     "posts/logs/learning-rust.md",
     "posts/logs/learning-kana.md",
     "posts/kana/Vocab.md",
+    "index.md",
     "posts/macOS.md",
     "posts/windows.md",
     "templates/post.md",
@@ -210,10 +212,8 @@
     "_site/posts/macOS",
     "_site/posts/windows/index.html",
     "_site/posts/windows",
-    "index.md",
     "assets/Pasted image 20250309225301.png",
     "assets/Pasted image 20250310223919.png",
-    "posts/rust/attempt 1.md",
     "bookmarks.md",
     "cv.md",
     "404.md",
