@@ -11,4 +11,5 @@ type: post
 12-05-2025 14:38 15:02 reviewing back about print and format
 12-05-2025 21:13 21:47 reviewing abt debug and data type
 14-05-2025 09:20 09:53 figuring out fibonacci :(
+15-05-2025 09:50   10:29 learning more about controls block
 

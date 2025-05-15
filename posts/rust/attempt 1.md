@@ -117,7 +117,7 @@ println!("{balance:Y<width$}")
 println!("Custom {}", Structure(3))
 ```
 
-## Debug
+## formatting / Display
 
 By default, `std::fmt` only available for the standard implementation, the rest will need to `implement` it.  Start debugging in `println` by using `{value:?}`.
 
@@ -219,6 +219,19 @@ fn main() {
 */
 ```
 
+## Debug
+
+```rust
+fn test() -> i32 {
+    2
+}
+
+fn main() {
+    let y = 10;
+    println!("Hello, world!");
+    dbg!(test(), dbg!(y) + 10);
+}
+```
 ## Others
 
 `#[allow(dead_code)]` is an [attribute](https://doc.rust-lang.org/rust-by-example/attribute.html) which only applies to the module after it.
@@ -251,6 +264,113 @@ let y = 10;
 assert_eq!(x, y)
 // error: expected floating-point number, found interger.
 ```
+
+
+# Controls
+## if Expressions
+
+```rust
+fn fibo(num: u32) -> u32 {
+    if num < 2 {
+        return num;
+    }
+    return fibo(num - 1) + fibo(num - 2);
+}
+```
+
+```rust
+fn main() {
+	let x = 5;
+	let size = if x > 5 { "big" } : { "small" };
+	dbg!(size);
+	// size = 'small'
+}
+```
+
+## match or switch case
+
+```rust
+	let y = 11;
+    let size_v2 = match y {
+		1 => "1",
+		2 => "2",
+        5 => {
+            println!("is eq 5");
+            "is 5"
+        }
+        10 => {
+            println!("is 10");
+            "is 10"
+        }
+        _ => {
+            println!("not match");
+            ""
+        }
+    };
+```
+
+## loops
+### while loop
+```rust
+fn main() {
+    let mut i: i8 = 1;
+    while i < 10 {
+        i += 1;
+    }
+    dbg!(i);
+}
+```
+
+### for loop
+```rust
+fn main() {
+    for x in 1..10 {
+        println!("{x:>width$}", width = x)
+    }
+	
+    for x in [1, 3, 5] {
+        println!("{x}")
+    }
+}
+```
+
+### forever loop
+```rust
+loop {
+ // alway run until "break"
+}
+```
+
+### assigned or label breaks
+```rust
+fn main() {
+    let s = [[5, 6, 7], [8, 9, 10], [21, 15, 32]];
+    let mut elements_searched = 0;
+    let target_value = 10;
+    'outer: for i in 0..=2 {
+        for j in 0..=2 {
+            elements_searched += 1;
+            if s[i][j] == target_value {
+                break 'outer;
+            }
+        }
+    }
+    dbg!(elements_searched);
+}
+```
+
+# Macros
+
+Macros are expanded into Rust code during compilation, and can take a variable number of arguments. They are distinguished by a `!` at the end. The Rust standard library includes an assortment of useful macros.
+
+- `println!(format, ..)` prints a line to standard output, applying formatting described in [`std::fmt`](https://doc.rust-lang.org/std/fmt/index.html).
+- `format!(format, ..)` works just like `println!` but returns the result as a string.
+- `dbg!(expression)` logs the value of the expression and returns it.
+- `todo!()` marks a bit of code as not-yet-implemented. If executed, it will panic.
+- `assert!`
+- `unreachable!`
+- `eprintln!`
+- 
 
 
 
