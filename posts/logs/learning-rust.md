@@ -12,4 +12,7 @@ type: post
 12-05-2025 21:13 21:47 reviewing abt debug and data type
 14-05-2025 09:20 09:53 figuring out fibonacci :(
 15-05-2025 09:50   10:29 learning more about controls block
+16-05-2025 4:10 4:22
+16-05-2025 4:31 05:25 learning about collatz conjecture
+ 
 

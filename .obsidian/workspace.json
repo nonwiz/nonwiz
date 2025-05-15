@@ -34,6 +34,20 @@
               "icon": "lucide-file",
               "title": "Vocab"
             }
+          },
+          {
+            "id": "9806eec6113f5d5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/logs/learning-rust.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "learning-rust"
+            }
           }
         ]
       }
@@ -206,10 +220,11 @@
   },
   "active": "ff259bdb9778b003",
   "lastOpenFiles": [
-    "posts/rust/attempt 1.md",
-    "posts/exercises/Fibo.md",
-    "posts/kana/Vocab.md",
+    "posts/exercises/Collatz Conjecture.md",
     "posts/logs/learning-rust.md",
+    "posts/exercises/Fibo.md",
+    "posts/rust/attempt 1.md",
+    "posts/kana/Vocab.md",
     "posts/logs/learning-kana.md",
     "posts/exercises",
     "posts/macOS.md",
@@ -246,7 +261,6 @@
     "posts/rust/day-0.md",
     "projects.md",
     "assets/Pasted image 20250321171721.png",
-    "posts/TIme lo.md",
     "_site/assets/Pasted image 20250321171721.png",
     "_site/Pasted image 20250310223919.png",
     "_site/Pasted image 20250321171721.png",
