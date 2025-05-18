@@ -359,6 +359,25 @@ fn main() {
 }
 ```
 
+```rust
+fn main() {
+    'aloop: for x in [1, 3, 5] {
+        let mut count = 0;
+        'bloop: while count < 4 {
+            count += 1;
+            println!("Printing {x}");
+            if count == 3 {
+                break 'bloop;
+            }
+            if x == 3 {
+                break 'aloop;
+            }
+        }
+        println!("Print outside");
+    }
+}
+```
+
 # Macros
 
 Macros are expanded into Rust code during compilation, and can take a variable number of arguments. They are distinguished by a `!` at the end. The Rust standard library includes an assortment of useful macros.
@@ -370,7 +389,62 @@ Macros are expanded into Rust code during compilation, and can take a variable n
 - `assert!`
 - `unreachable!`
 - `eprintln!`
-- 
+
+# Arrays
+
+```rust
+fn main() {
+	// u8 refer to type, 5 here refer to size of the array
+	let mut arr: [u8; 5] = [6, 3, 2, 1, 0];
+	arr[0] = 5;
+	println!("Arr : {arr:?}");
+}
+```
+
+```rust
+fn main() {
+	let arr = [0; 5];
+	// [0, 0, 0, 0, 0]
+}
+```
+
+## tuples
+```rust
+fn main() {
+	let tup = (0, 5, 10, 15);
+	// or
+	let tup1 : (u8, u8, u8, u8) = (1, 2, 3, 4)
+}
+
+```
+
+## array iteration
+
+```rust
+fn main() {
+    let arr = [1, 2, 3, 4, 5];
+    for item in arr {
+        for i in 1..item {
+            println!("i: {i}, item: {item}")
+        }
+        println!("Item: {item}");
+    }
+}
+```
+
+## patterns and destructuring
+
+```rust
+fn main() {
+    let arr = [1, 2, 3, 4, 5];
+    let [first, second, _third, _fourth, _fifth] = arr;
+    println!("first: {first}, sec: {second}");
+
+    let tup = (true, false);
+    let (is_true, is_false) = tup;
+    println!("{is_true}, {is_false}");
+}
+```
 
 
 
