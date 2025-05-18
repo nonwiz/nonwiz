@@ -39,4 +39,5 @@ date:
 13-05-2025 06:17 06:54 reviewing vocab
 14-05-2025 06:15 06:43 reviewing vocab
 15-05-2025 06:30 07:04 reviewing vocab
-16-06-2025 06:16 06:48. reviewing vocab
+16-05-2025 06:16 06:48 reviewing vocab
+18-05-2025 11:57 12:27 learning dakuon

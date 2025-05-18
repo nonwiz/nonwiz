@@ -106,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 338.5,
+    "collapsed": true
   },
   "right": {
     "id": "89f8801c35fe0992",
@@ -221,11 +222,11 @@
   "active": "ff259bdb9778b003",
   "lastOpenFiles": [
     "posts/kana/Vocab.md",
-    "posts/logs/learning-rust.md",
     "posts/logs/learning-kana.md",
+    "posts/rust/attempt 1.md",
+    "posts/logs/learning-rust.md",
     "posts/exercises/Collatz Conjecture.md",
     "posts/exercises/Fibo.md",
-    "posts/rust/attempt 1.md",
     "posts/exercises",
     "posts/macOS.md",
     "index.md",
