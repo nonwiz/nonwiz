@@ -140,12 +140,25 @@ date:
 よむ: yomu - read
 いろ: iro - color
 
-## To be add to anki
 だれ: dare - who
 かど: kado - corner
 つづく: tsuzuku - continue
 まだ: mada - still
  なみだ: namida - tears
+
+ゆび: yubi - finger
+かぶ: kabu - turnip
+ふぶき: fubuki - blizzard
+ぶし: bushi - warrior
+しばい: shibai - play
+たんぽぽ: tampopo - dandelion
+えんぴつ: enpitsu - pencil
+じしん: jishin - earthquake
+ねずみ: nezumi - mouse
+ざせき: zaseki - seat
+めざまし: mezamashi - alarm
+
+
 
 
 
