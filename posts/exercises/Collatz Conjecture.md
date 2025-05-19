@@ -1,3 +1,13 @@
+---
+title: 
+pinned: false
+tags: 
+draft: true
+category: post
+type: post
+date:
+---
+
 All positive number under this calculation wiill go back to 4, 2, 1.
 
 > Given any positive number

@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/logs/learning-kana.md",
+                "file": "posts/exercises/Transposed.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "learning-kana"
+              "title": "Transposed"
+            }
+          },
+          {
+            "id": "2a21f67cbf02574b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/logs/learning-rust.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "learning-rust"
             }
           },
           {
@@ -35,7 +49,8 @@
               "title": "Vocab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,15 +220,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9806eec6113f5d5c",
+  "active": "2a21f67cbf02574b",
   "lastOpenFiles": [
-    "posts/kana/Vocab.md",
-    "posts/logs/learning-kana.md",
-    "vo.md",
-    "posts/logs/learning-rust.md",
+    "posts/exercises/Transposed.md",
     "posts/rust/attempt 1.md",
     "posts/exercises/Collatz Conjecture.md",
+    "Untitled.md",
     "posts/exercises/Fibo.md",
+    "posts/logs/learning-rust.md",
+    "posts/logs/learning-kana.md",
+    "posts/kana/Vocab.md",
+    "vo.md",
     "posts/exercises",
     "posts/macOS.md",
     "index.md",
@@ -243,10 +260,8 @@
     "posts/Untitled.md",
     "Seminar.md",
     "diary/daily/2025-03-07.md",
-    "diary/daily/2025-04-02.md",
     "_site/assets/Pasted image 20250310223919.png",
     "_site/assets/Pasted image 20250309225301.png",
-    "posts/rust/day-0.md",
     "assets/Pasted image 20250321171721.png",
     "_site/assets/Pasted image 20250321171721.png",
     "_site/Pasted image 20250310223919.png",

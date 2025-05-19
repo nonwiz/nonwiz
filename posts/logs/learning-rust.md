@@ -15,5 +15,6 @@ type: post
 16-05-2025 4:10 4:22
 16-05-2025 4:31 05:25 learning about collatz conjecture
 18-05-2025 22:02  22:56 learning about array, tuple, and iteration
+19-05-2025 07:50 08:26 working on tranpose
  
 
