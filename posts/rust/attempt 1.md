@@ -451,5 +451,76 @@ fn main() {
 }
 ```
 
+# references
+
+accessing value without taking ownership of the value which also known as borrowing.
+
+## shared references
+
+read-only value and referenced data cannot be change
+
+```rust
+fn main() {
+	let a = 'A';
+	let b = 'B';
+	// refering to the reference using &
+	let mut x = &a;
+	x = &b;
+	// refer back to dereference using: *x 
+	// but cannot do write operation to the original source.
+}
+
+```
+
+
+## exclusive references
+
+can read and also write
+```rust
+fn main() {
+	let mut a = 'A';
+	let b = 'B';
+	let r = &mut a;
+	*r = 'X';
+	// now `a` changed into 'X'.
+}
+
+```
+
+
+```rust
+fn main() {
+    let mut point = (1, 2);
+    let x_coord = &mut point.0;
+    *x_coord = 20;
+    println!("point: {point:?}");
+	// (20, 2)
+}
+```
+
+```rust
+fn main() {
+    let mut coord = (1, 20);
+    let x_coor = &mut coord.0;
+    {
+		coord.0 = 1;
+        *x_coor = 3;
+        dbg!(x_coor);
+		// we have to scope it like this for borrow to end 
+		// so we can use it.
+		
+    }
+    println!("{coord:#?}");
+}
+```
+
+
+## slices
+
+## strings
+
+## reference validity
+
+
 
 
