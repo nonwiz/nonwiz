@@ -157,6 +157,11 @@ date:
 ねずみ: nezumi - mouse
 ざせき: zaseki - seat
 めざまし: mezamashi - alarm
+おんぷ: onpu - music note
+さんぽ: sanpo - stroll
+かんぱい: kanpai - cheers
+しんぽ: shinpo - progress
+かんぺき: kenpeki - perfect
 
 
 
