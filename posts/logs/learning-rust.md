@@ -17,5 +17,8 @@ type: post
 18-05-2025 22:02  22:56 learning about array, tuple, and iteration
 19-05-2025 07:50 08:26 working on tranpose
 19-05-2025 08:50 09:31 learning a bit about shared reference and exclusive reference
+20-05-2025 19:34 20:41 learning more about reference
+20-05-2025 21:08 21:30 doing geometry exercise
+
  
 

@@ -9,6 +9,7 @@ type: post
 > Just dumping it here by hand so I can learn, 99% content here taken from links below:
 
 Ref: [Rust by example](https://doc.rust-lang.org/rust-by-example/hello.html) , [Comprehensive rust](https://google.github.io/comprehensive-rust/welcome-day-1.html) , [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024)
+
 # Hello world
 
 ```rust
@@ -517,10 +518,113 @@ fn main() {
 
 ## slices
 
+```rust
+// Given the aarray
+let a = [1, 2, 3, 4, 5];
+let slice_0_2 : [i32] = &a[..3]; // or &a[0..3]
+let slice_everything = &a[..];
+let slice_before_end = &a[..a.len() - 1];
+```
+
 ## strings
+
+### `&str` vs `String` in Rust
+
+### `&str`
+- Borrowed string slice (does **not** own the data)
+- Immutable
+- Stored on the stack (or inside another object)
+- Zero allocation — super fast
+- Often used for function parameters (`fn foo(s: &str)`)
+- Comes from string literals (`"hello"` is a `&'static str`)
+- Limited: can’t grow or mutate
+
+### `String`
+- Owns its data
+- Mutable and growable
+- Allocated on the heap
+- Used when you need to build or modify strings
+- Slower than `&str` because of heap allocation
+- Common when returning strings or storing them long-term
+
+### Conversion
+
+```rust
+// &str -> String
+let s: &str = "hello";
+let owned: String = s.to_string();
+
+// String -> &str
+let s: String = String::from("hello");
+let slice: &str = &s;
+```
+
+```rust
+fn main() {
+    let text_a: &str = "Hello";
+    let mut text_b: String = String::from("World");
+    let text_c: String = "Yo".to_string();
+    text_b.push_str(" #01");
+    println!("{text_a}: {text_b}, {text_c}");
+    let text_d = format!("{text_a}: {text_b}, {text_c}").to_ascii_uppercase();
+    let text_e = &text_d[0..3];
+    println!("{text_a}: {text_b}, {text_c}, text_d: {text_d}, text_e: {text_e}");
+}
+```
+
+### byte string
+```rust
+println!("{:?}", b"abc");
+```
+
+### raw string
+```rust
+println!(r#"<a href="link.html">link</a>"#);
+```
 
 ## reference validity
 
+Rust enforces a number of rules for references that make them always safe to use. One rule is that references can never be `null`, making them safe to use without `null` checks. The other rule we’ll look at for now is that references can’t _outlive_ the data they point to.
 
+```rust
+fn main() {
+    let x_ref = {
+        let x = 10;
+        &x
+    };
+    dbg!(x_ref);
+}
+```
 
+# user-defined types
 
+## named structs
+
+```rust
+struct Person {
+    name: String,
+    age: u8,
+}
+
+fn describe(person: &Person) {
+    println!("{} is {} years old", person.name, person.age);
+}
+
+fn main() {
+    let john = Person {
+        name: "John".to_string(),
+        age: 12,
+    };
+    describe(&john);
+}
+```
+
+## tuple structs
+
+## enums
+
+## type aliases
+
+## const
+
+## static
