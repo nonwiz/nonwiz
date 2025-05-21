@@ -161,7 +161,51 @@ date:
 さんぽ: sanpo - stroll
 かんぱい: kanpai - cheers
 しんぽ: shinpo - progress
-かんぺき: kenpeki - perfect
+かんぺき: kanpeki - perfect
+おちゃ: ocha - green tea
+ひゃく: hyaku - hundred
+でんき: denki - electricity
+はなぢ: hanaji - nosebleed
+ともだち: tomodachi - friend
+ばん: ba n - evening
+
+### weather / season / time
+
+はる: spring
+あき: autumn
+なつ: summer
+ふゆ: winter
+つゆ: rainy 
+はれ: clear weather
+ひる: daytime
+ばん: evening
+あさ: morning
+
+### feeling
+あつい: hot
+からい: spicy
+かゆい: itchy
+
+### body part
+
+くち: mouth
+みみ: ear
+こし: waist
+せなか: back
+かお: face
+あたま: head
+
+### number
+
+さん: three
+ろく: six
+なな: seven
+はち: eight
+ひゃく: hundred
+まん: ten thousand
+
+
+
 
 
 
