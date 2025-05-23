@@ -21,6 +21,6 @@ type: post
 20-05-2025 21:08 21:30 doing geometry exercise
 21-05-2025 19:12 20:00
 21-05-2025 20:51 21:11 struct, enum
-
+23-05-2025 08:25 08:46 learn more about ownership, clone, and copy
  
 

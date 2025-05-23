@@ -630,6 +630,7 @@ fn main() {
 
 
 ## enums
+
 ```rust
 #[derive(Debug)]
 enum Direction {
