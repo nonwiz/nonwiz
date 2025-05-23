@@ -45,4 +45,6 @@ date:
 20-05-2025 05:24 06:04 learning dakuon and anki
 21-05-2025 06:30 6:40
 21-05-2025 06:57 07:50 learning small combo and anki
-
+22-05-2025 05:33 06:13 continue small combo and anki
+23-05-2025 05:53 06:26 
+23-05-2025 06:40 07:17

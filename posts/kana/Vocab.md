@@ -168,6 +168,20 @@ date:
 はなぢ: hanaji - nosebleed
 ともだち: tomodachi - friend
 ばん: ba n - evening
+かぽちゃ: kapocha - pumpkin
+きゃく: kyaku - customer
+かいしゃ: kaisha - company
+こんにゃく: konnyaku - konjac
+しゅみ: shumi - hobby
+かしゅ: kashu - singer
+なべ: nabe - hot pot
+たべる: taberu - eat
+たび: tabi - journey
+ぶんか: bunka - culture
+べんごし: bengoshi - lawyer
+サイ: sai - rhinoceros
+イカ: ika - squid
+
 
 ### weather / season / time
 
@@ -194,6 +208,9 @@ date:
 せなか: back
 かお: face
 あたま: head
+ひげ: beard
+ひざ: knee
+
 
 ### number
 
@@ -204,6 +221,18 @@ date:
 ひゃく: hundred
 まん: ten thousand
 
+### direction
+
+きた: north
+にし: west
+
+### terrain
+
+かざん: volcano
+やま: mountain
+かわ: river
+しま: island
+うみ: sea
 
 
 

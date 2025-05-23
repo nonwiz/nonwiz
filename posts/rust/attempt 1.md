@@ -620,11 +620,42 @@ fn main() {
 ```
 
 ## tuple structs
+```rust
+struct Geometry(u32, u32, u32);
+
+fn main() {
+	let g1 = Geometry(1, 2, 3);
+}
+```
+
 
 ## enums
+```rust
+#[derive(Debug)]
+enum Direction {
+    Left,
+    Right,
+}
+
+#[derive(Debug)]
+enum PlayerMove {
+    Pass, // simple
+    Run(Direction), // tuple variant
+    Teleport { x: u32, y: u32 }, // struct variant
+}
+
+fn main() {
+    let left = Direction::Left;
+    let p1: PlayerMove = PlayerMove::Run(Direction::Right);
+    let p2 = PlayerMove::Pass;
+    let p3 = PlayerMove::Run(left);
+    println!("{p1:?}, {p2:?}, {p3:?}");
+}
+```
 
 ## type aliases
 
 ## const
 
 ## static
+	

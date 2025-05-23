@@ -19,6 +19,8 @@ type: post
 19-05-2025 08:50 09:31 learning a bit about shared reference and exclusive reference
 20-05-2025 19:34 20:41 learning more about reference
 20-05-2025 21:08 21:30 doing geometry exercise
+21-05-2025 19:12 20:00
+21-05-2025 20:51 21:11 struct, enum
 
  
 
