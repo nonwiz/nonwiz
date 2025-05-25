@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/logs/learning-rust.md",
+                "file": "posts/logs/learning-kana.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "learning-rust"
+              "title": "learning-kana"
             }
           }
         ]
@@ -193,15 +193,15 @@
   },
   "active": "8abfc5977719f13b",
   "lastOpenFiles": [
+    "posts/kana/Vocab.md",
+    "posts/logs/learning-kana.md",
+    "posts/logs/learning-rust.md",
     "posts/code_wars/Grade book.md",
     "posts/rust/attempt 1.md",
-    "posts/logs/learning-rust.md",
     "posts/code_wars/Opposite attracts.md",
     "posts/exercises/Elevator Event.md",
     "Untitled 1.md",
     "posts/code_wars",
-    "posts/kana/Vocab.md",
-    "posts/logs/learning-kana.md",
     "posts/exercises/Transposed.md",
     "posts/exercises/Normalization and magnitude of 3D geometry.md",
     "posts/exercises/Collatz Conjecture.md",

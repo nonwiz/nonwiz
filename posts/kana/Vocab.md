@@ -188,6 +188,17 @@ date:
 しゅくだい: shukudai - homework
 アイス: aisu - ice cream
 コイ: koi - carp
+きょねん: kyonen - last year
+りょかん: ryokan - traditional inn
+でんぱ: denpa - radio wave
+しんぱい: shinpai - worry
+てんぺら: tenpura - tempura
+シカ: shika - deer
+コア: koa - core
+ミス: misu - mistake
+チワワ: chiwawa - chihuahua
+
+
 
 
 
@@ -203,6 +214,8 @@ date:
 ひる: daytime
 ばん: evening
 あさ: morning
+きょねん: last year
+
 
 ### feeling
 あつい: hot
@@ -261,6 +274,8 @@ date:
 よむ: read
 かう: buy
 のむ: drink
+かく: write
+きく: listen
 
 
 

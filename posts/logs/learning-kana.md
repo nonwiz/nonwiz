@@ -49,3 +49,4 @@ date:
 23-05-2025 05:53 06:26 
 23-05-2025 06:40 07:17 learning small combo, katakana, and anki
 25-05-2025 06:13 07:29 learning katakana, anki...
+26-05-2025 05:53 06:52 katakana, anki
