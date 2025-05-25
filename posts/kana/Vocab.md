@@ -181,6 +181,15 @@ date:
 べんごし: bengoshi - lawyer
 サイ: sai - rhinoceros
 イカ: ika - squid
+しゅと: shuto - capital
+しゅふ: shufu - homemaker
+しゅわ: shuwa - sign language
+ししゅつ: shishutsu - expenditure
+しゅくだい: shukudai - homework
+アイス: aisu - ice cream
+コイ: koi - carp
+
+
 
 
 ### weather / season / time
@@ -214,10 +223,21 @@ date:
 
 ### number
 
+いち: one
+に: two
 さん: three
+し / よん: four
+ご: five
 ろく: six
-なな: seven
+なな / しち: seven
 はち: eight
+きゅう / ku : nine
+じゅう: ten
+じゅういち: eleven
+じゅうに: twelve
+じゅうさん: thirteen
+にじゅう: twenty
+さんじゅう: thirty
 ひゃく: hundred
 まん: ten thousand
 
@@ -233,6 +253,15 @@ date:
 かわ: river
 しま: island
 うみ: sea
+つち: soil
+たき: waterfall
+
+### actions
+
+よむ: read
+かう: buy
+のむ: drink
+
 
 
 

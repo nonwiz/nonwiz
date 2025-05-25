@@ -113,12 +113,12 @@ let width = 2;
 println!("{balance:Y<width$}")
 ```
 
-### defined types require fmt::Display
+### Defined types require fmt::Display
 ```rust
 println!("Custom {}", Structure(3))
 ```
 
-## formatting / Display
+## Formatting / Display
 
 By default, `std::fmt` only available for the standard implementation, the rest will need to `implement` it.  Start debugging in `println` by using `{value:?}`.
 
@@ -147,7 +147,7 @@ fn main() {
 ```
 > The & indicates a **reference**, meaning Computer does not own the string but only borrows it. The 'a is a **lifetime parameter**, ensuring that the reference to the string remains valid for at least the lifetime 'a.
 
-### implementing display for custom type
+### Implementing display for custom type
 ```rust
 use std::fmt; // Import `fmt`
 
@@ -165,7 +165,7 @@ impl fmt::Display for MinMax {
 }
 ```
 
-### implementing display for nameable field
+### Implementing display for nameable field
 ```rust
 // Define a structure where the fields are nameable for comparison.
 #[derive(Debug)]
@@ -268,7 +268,7 @@ assert_eq!(x, y)
 
 
 # Controls
-## if Expressions
+## If Expressions
 
 ```rust
 fn fibo(num: u32) -> u32 {
@@ -288,7 +288,7 @@ fn main() {
 }
 ```
 
-## match or switch case
+## Match or switch case
 
 ```rust
 	let y = 11;
@@ -310,8 +310,8 @@ fn main() {
     };
 ```
 
-## loops
-### while loop
+## Loops
+### While loop
 ```rust
 fn main() {
     let mut i: i8 = 1;
@@ -322,7 +322,7 @@ fn main() {
 }
 ```
 
-### for loop
+### For loop
 ```rust
 fn main() {
     for x in 1..10 {
@@ -337,17 +337,22 @@ fn main() {
 		// 9, 8, 7, ... 0
 	}
 
+	// can be 'A'..='Z', 'a'..='z', '0'..='9'
+	for i in 'A'..='Z' {
+		// A B C
+    }
+
 }
 ```
 
-### forever loop
+### Forever loop
 ```rust
 loop {
  // alway run until "break"
 }
 ```
 
-### assigned or label breaks
+### Assigned or label breaks
 ```rust
 fn main() {
     let s = [[5, 6, 7], [8, 9, 10], [21, 15, 32]];
@@ -414,7 +419,7 @@ fn main() {
 }
 ```
 
-## tuples
+## Tuples
 ```rust
 fn main() {
 	let tup = (0, 5, 10, 15);
@@ -424,7 +429,7 @@ fn main() {
 
 ```
 
-## array iteration
+## Array iteration
 
 ```rust
 fn main() {
@@ -438,7 +443,7 @@ fn main() {
 }
 ```
 
-## patterns and destructuring
+## Patterns and destructuring
 
 ```rust
 fn main() {
@@ -452,11 +457,11 @@ fn main() {
 }
 ```
 
-# references
+# References
 
 accessing value without taking ownership of the value which also known as borrowing.
 
-## shared references
+## Shared references
 
 read-only value and referenced data cannot be change
 
@@ -473,8 +478,7 @@ fn main() {
 
 ```
 
-
-## exclusive references
+## Exclusive references
 
 can read and also write
 ```rust
@@ -516,7 +520,7 @@ fn main() {
 ```
 
 
-## slices
+## Slices
 
 ```rust
 // Given the aarray
@@ -526,7 +530,7 @@ let slice_everything = &a[..];
 let slice_before_end = &a[..a.len() - 1];
 ```
 
-## strings
+## Strings
 
 ### `&str` vs `String` in Rust
 
@@ -572,17 +576,17 @@ fn main() {
 }
 ```
 
-### byte string
+### Byte string
 ```rust
 println!("{:?}", b"abc");
 ```
 
-### raw string
+### Raw string
 ```rust
 println!(r#"<a href="link.html">link</a>"#);
 ```
 
-## reference validity
+## Reference validity
 
 Rust enforces a number of rules for references that make them always safe to use. One rule is that references can never be `null`, making them safe to use without `null` checks. The other rule we’ll look at for now is that references can’t _outlive_ the data they point to.
 
@@ -596,9 +600,9 @@ fn main() {
 }
 ```
 
-# user-defined types
+## User-defined types
 
-## named structs
+### Named structs
 
 ```rust
 struct Person {
@@ -619,7 +623,7 @@ fn main() {
 }
 ```
 
-## tuple structs
+### Tuple structs or newtype
 ```rust
 struct Geometry(u32, u32, u32);
 
@@ -629,7 +633,7 @@ fn main() {
 ```
 
 
-## enums
+### Enums
 
 ```rust
 #[derive(Debug)]
@@ -654,9 +658,262 @@ fn main() {
 }
 ```
 
-## type aliases
+decide which size to store the variable:
 
-## const
+```rust
+#[repr(u32)]
+enum Bar {
+    A, // 0
+    B = 10000,
+    C, // 10001
+}
 
-## static
-	
+fn main() {
+    println!("A: {}", Bar::A as u32);
+    println!("B: {}", Bar::B as u32);
+    println!("C: {}", Bar::C as u32);
+}
+```
+### Type aliases
+
+```rust
+enum CarryableConcreteItem {
+    Left,
+    Right,
+}
+
+type Item = CarryableConcreteItem;
+
+// Aliases are more useful with long, complex types:
+use std::cell::RefCell;
+use std::sync::{Arc, RwLock};
+type PlayerInventory = RwLock<Vec<Arc<RefCell<Item>>>>;
+```
+
+### Const
+
+Use **const** when you want **compile-time** constant values (like math constants, config values).
+
+```rust
+const DIGEST_SIZE: usize = 3;
+const FILL_VALUE: u8 = calculate_fill_value();
+
+// constant function 
+const fn calculate_fill_value() -> u8 {
+    if DIGEST_SIZE < 10 { 42 } else { 13 }
+}
+
+fn compute_digest(text: &str) -> [u8; DIGEST_SIZE] {
+    let mut digest = [FILL_VALUE; DIGEST_SIZE];
+    for (idx, &b) in text.as_bytes().iter().enumerate() {
+        digest[idx % DIGEST_SIZE] = digest[idx % DIGEST_SIZE].wrapping_add(b);
+    }
+    digest
+}
+
+fn main() {
+    let digest = compute_digest("Hello");
+    println!("digest: {digest:?}");
+}
+```
+
+### Static
+
+- **One memory location** in the program — has a fixed address.
+- Can be **mutable** (but requires unsafe).
+- Lives for the entire **lifetime of the program** ('static).
+- Used for **global state**, large objects, or interfacing with C.
+
+```rust
+static BANNER: &str = "Welcome to RustOS 3.14";
+
+fn main() {
+    println!("{BANNER}");
+}
+```
+
+## Pattern matching
+Extracting data from structures.
+
+### Irrefutable patterns
+```rust
+fn takes_tuple(tuple: (char, i32, bool)) {
+	let a = tuple.0;
+	let b = tuple.1;
+	let c = tuple.2;
+	let (a, b, c) = tuple;
+	let (_, b, c) = tuple;
+	let (.., c) = tuple;
+	let (a, .., c) = tuple;
+}
+```
+
+### Matching values
+
+```rust
+fn main() {
+    let input = 'x';
+    match input {
+        'q' => println!("Quiting."),
+        'a' | 's' | 'w' | 'd' => println!("Moving"),
+        '0'..='9' => println!("Numeric"),
+        key if key.is_lowercase() => println!("Lower case!"),
+        _ => println!("Unknown!"),
+    }
+}
+```
+
+```rust
+let opt = Some(123);
+match opt {
+    outer @ Some(inner) => {
+        println!("outer: {outer:?}, inner: {inner}");
+    }
+    None => {}
+}
+```
+
+```rust
+fn main() {
+    let data = Some(8);
+
+    match data {
+        Some(inner) => println!("Some, {inner}"),
+        None => println!("Nothing"),
+    }
+
+    match data {
+        outer @ Some(inner) => println!("Some: {outer:?}, {inner}"),
+        None => println!("Nothing"),
+    }
+}
+```
+
+### Destructuring structs
+
+below work for primitive value but not complex operation or String.
+```rust
+struct Foo {
+    x: (u32, u32),
+    y: u32,
+}
+
+#[rustfmt::skip]
+fn main() {
+    let foo = Foo { x: (1, 2), y: 3 };
+    match foo {
+        Foo { y: 2, x: i }   => println!("y = 2, x = {i:?}"),
+        Foo { x: (1, b), y } => println!("x.0 = 1, b = {b}, y = {y}"),
+        Foo { y, .. }        => println!("y = {y}, other fields were ignored"),
+    }
+}
+```
+
+For complex type matching.
+```rust
+struct Person {
+    name: String,
+    age: u32,
+}
+
+fn main() {
+    let name_john = String::from("John");
+    let name_sarra = String::from("SARRA");
+
+    let john = Person {
+        name: "SARRA".to_string(),
+        age: 10,
+    };
+    match john {
+        Person { name, .. } if name == name_john => println!("John-san!"),
+        Person { name, .. } if name.eq(&name_sarra) => println!("Sarra-san!"),
+        _ => println!("no idea who"),
+    }
+}
+```
+
+### Destructuring enums
+```rust
+enum Result {
+    Ok(i32),
+    Err(String),
+}
+
+fn divide_in_two(n: i32) -> Result {
+    if n % 2 == 0 {
+        Result::Ok(n / 2)
+    } else {
+        Result::Err(format!("cannot divide {n} into two equal parts"))
+    }
+}
+
+fn main() {
+    let n = 100;
+    match divide_in_two(n) {
+        Result::Ok(half) => println!("{n} divided in two is {half}"),
+        Result::Err(msg) => println!("sorry, an error happened: {msg}"),
+    }
+}
+```
+
+```rust
+fn divide_by_two(num: i32) -> Option<i32> {
+    if num % 2 == 0 {
+        return Some(num / 2);
+    }
+    return None;
+}
+
+fn main() {
+    let val = divide_by_two(9);
+    match val {
+        Some(inner) => println!("Divisible by two, result is: {inner}"),
+        None => println!("Cannot be divide by two"),
+    }
+}
+```
+### Let control flow
+
+#### if let
+```rust
+use std::{thread::sleep, time::Duration};
+
+fn sleep_for(secs: f32) {
+    if let Ok(duration) = Duration::try_from_secs_f32(secs) {
+        let duration_as_sec = duration.as_secs();
+        println!("Sleeping for {duration_as_sec}");
+        sleep(duration);
+        println!("Waking up...");
+    } else {
+        println!("Cannot sleep with given value: {secs}");
+    }
+}
+
+fn main() {
+    sleep_for(2.0);
+    sleep_for(-4.0);
+}
+```
+
+#### while let
+
+#### let else
+
+## Methods
+Associating functions with types.
+
+## Traits
+Behaviors shared by multiple types.
+
+## Generics
+Parameterizing types on other types.
+
+## Standard library types and traits
+A tour of Rust's rich standard library.
+
+## Closures
+Function pointers with data
+
+Function pointers with data
+
+
