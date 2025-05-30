@@ -197,10 +197,24 @@ date:
 コア: koa - core
 ミス: misu - mistake
 チワワ: chiwawa - chihuahua
-
-
-
-
+エア: ea - air
+ワシ: washi - eagle
+タコ: tako - octopus
+めんきょ: menkyo - license
+じしょ: jisho - dictionary
+ちょきん: chokin - savings
+どりょく: doryoku - effort
+しょくじ: shokuji - meal
+ぎゃく: gyaku - opposite
+にんじゃ: ninja - ninja
+オン: on - on
+タカ: taka - falcon
+カン: kan - can
+キス: kisu - kiss
+ユタ: yuta - Utah
+ユリ: yuri - lily
+カサカサ: kasakasa - rustling noise like leave
+サウス: sausu - south
 
 
 ### weather / season / time
@@ -258,6 +272,7 @@ date:
 
 きた: north
 にし: west
+サウス: south
 
 ### terrain
 
@@ -276,6 +291,22 @@ date:
 のむ: drink
 かく: write
 きく: listen
+さく: bloom
+けす: erase
+さそう: invite
+かえす: return
+おす: push
+おこす: to wake someone up, to cause to happen
+さがす: search
+
+## response
+すぐ: immediately
+すぎ: next
+
+## food
+しお: salt
+
+
 
 
 

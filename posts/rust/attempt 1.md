@@ -896,8 +896,36 @@ fn main() {
 ```
 
 #### while let
+```rust
+fn main() {
+    let mut text = String::from("How can I help?");
+    while let Some(result) = text.pop() {
+        dbg!(result);
+    }
+}
+```
 
 #### let else
+```rust
+fn find_hex(optional_text: Option<String>) -> Result<u32, String> {
+    let Some(text) = optional_text else {
+        return Err("Not valid text.".to_string());
+    };
+    let Some(first_character) = text.chars().next() else {
+        return Err("Not valid first character".to_string());
+    };
+    let Some(result) = first_character.to_digit(32) else {
+        return Err("Cannot convert".to_string());
+    };
+    Ok(result)
+}
+
+fn main() {
+    let text = String::from("n");
+    let result = find_hex(Some(text));
+    dbg!(result);
+}
+```
 
 ## Methods
 Associating functions with types.

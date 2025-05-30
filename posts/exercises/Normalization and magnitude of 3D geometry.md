@@ -1,3 +1,13 @@
+---
+title: 
+pinned: false
+tags: 
+draft: true
+category: post
+type: post
+date:
+---
+
 ```rust
 fn magnitude(v: [f32; 3]) -> f32 {
     let [x, y, z] = v;
