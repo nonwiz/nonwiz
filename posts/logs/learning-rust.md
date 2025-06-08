@@ -26,5 +26,6 @@ type: post
 25-05-2025 08:32 09:38 pattern matching
 25-05-2025 09:50 10:28 doing code wars
 28-05-2025 08:32 09:10 let control flow.
- 
+01-06-2025 11:42 11:54 reviewing...
+01-06-2025 05:13 05:45 doing eval expression
 

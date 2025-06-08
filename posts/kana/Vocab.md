@@ -215,6 +215,31 @@ date:
 ユリ: yuri - lily
 カサカサ: kasakasa - rustling noise like leave
 サウス: sausu - south
+きゃくしつ: kyakushitsu - guest room
+しゃしん: shashin - photo
+ちゃいろ: chairo - brown
+でんしゃ: densha - train
+ツタ: tsuta - ivy
+リス: risu - squirrel
+ラン: ran (dan) - orchid
+カツ: katsu - cutlet
+ラテ: rate - latte
+ハチ: hachi - bee
+ココア: kokoa - cocoa
+スコア: sukoa - score
+スイカ: suika - watermelon
+イコ: iko - eco-friendly
+じゃま: jama - hindrance
+ぎゃく: gyaku - opposite
+びゃくや: byakuya - midnight sun
+じんじゃ: jinja - shinto shrine
+あんぎゃ: angya - pilgrimage
+コマ: koma - pawn
+ハワイ: hawai - hawaii
+インク: inku - ink
+ナイス: naisu - nice
+
+
 
 
 ### weather / season / time
@@ -229,6 +254,8 @@ date:
 ばん: evening
 あさ: morning
 きょねん: last year
+ふぶき: blizzard
+
 
 
 ### feeling
@@ -305,10 +332,45 @@ date:
 
 ## food
 しお: salt
+カツ: cutlet
+ラテ: latte
+ココア: cocoa
+スアカ: watermelon
+かぶ: turnip
 
 
 
+### color
+いろ: color
+あか: red
+あお: blue
+ちゃいろ: brown
 
+### animals
+しし: lion
+うし: cow
+イカ: squid
+タコ: octopus
+リス: squirrel
+いぬ: dog
+ねこ: cat
+ねずみ: mouse
+くま: bear
+シカ: deer
+サイ: rhinoceros
+ワシ: eagle
+とり: bird
+はと: pigeon
+タカ: falcon
+ハチ: bee
+ぞう: elephant
+ラマ: llama (dima - alpega animal)
+
+
+
+### plants
+ラン: orchid
+ゆり: lily
 
 
 

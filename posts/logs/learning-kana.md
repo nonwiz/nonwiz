@@ -54,3 +54,7 @@ date:
 29-05-2025 06:30 06:52
 29-05-2025 07:02 07:56 katakana, anki
 30-05-2025 08:33 08:57 katakana review
+01-06-2025 06:15 07:22 katakana
+02-06-2025 08:28 08:44 small review
+04-06-2025 08:50 09:29 katakana
+08-06-2025 08:42 09:57 katakana and review
