@@ -58,3 +58,9 @@ date:
 02-06-2025 08:28 08:44 small review
 04-06-2025 08:50 09:29 katakana
 08-06-2025 08:42 09:57 katakana and review
+09-06-2025 07:47 08:34 reviewing
+10-06-2025 09:00 09:13 reviewing
+13-06-2025 22:00 22:20 reviewing
+14-06-2025 23:05 23:06 reviewing 
+15-06-2025 08:06 09:06 katakana and review
+16-06-2025 07:06 08:06 reviewing

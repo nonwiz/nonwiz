@@ -238,6 +238,12 @@ date:
 ハワイ: hawai - hawaii
 インク: inku - ink
 ナイス: naisu - nice
+じゅんび: junbi - preparation
+しんじゅ: shinju - pearl
+ナシ: nashi - pear
+クラス: kurasu - class
+
+
 
 
 
@@ -255,6 +261,7 @@ date:
 あさ: morning
 きょねん: last year
 ふぶき: blizzard
+クモ: spider
 
 
 
