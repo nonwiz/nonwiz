@@ -242,6 +242,7 @@ date:
 しんじゅ: shinju - pearl
 ナシ: nashi - pear
 クラス: kurasu - class
+ハリ
 
 
 
