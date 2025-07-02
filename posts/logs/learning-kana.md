@@ -68,3 +68,8 @@ date:
 18-06-2025 05:25 06:12 katakana and review
 19-06-2025 05:57 06:38 reviewing
 22-06-2025 19:53 20:23 reviewing
+23-06-2025 07:28 08:05 learning about small っ
+24-06-2025 06:25 07:05 new katakana
+25-06-2025 07:47 08:15 reviewing kana
+01-07-2025 22:11 22:50 reviewing kana
+02-07-2025 20:33 21:23 reviewing kana
