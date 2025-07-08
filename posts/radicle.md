@@ -98,4 +98,10 @@ rad patch diff e5f0a5a
 ```bash
 git rebase main
 ```
+### merge patch
+```
+git checkout main
+git merge patch/[patchid]
+git push rad [branch]
+```
 

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ae31642817739fcd",
+        "id": "667dfa815008dc09",
         "type": "tabs",
         "children": [
           {
-            "id": "905ed5dd60b4b838",
+            "id": "1a478ee3cc1216ee",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/gnome.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "gnome"
+              "title": "New tab"
             }
           }
         ]
@@ -190,7 +186,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "905ed5dd60b4b838",
+  "active": "1a478ee3cc1216ee",
   "lastOpenFiles": [
     "posts/radicle.md",
     "posts/gnome.md",
