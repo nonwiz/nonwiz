@@ -10,3 +10,4 @@ layout: index.vto
 - learn kana and rust
 - build side projects
 - read few books
+- start home lab
