@@ -73,3 +73,4 @@ date:
 25-06-2025 07:47 08:15 reviewing kana
 01-07-2025 22:11 22:50 reviewing kana
 02-07-2025 20:33 21:23 reviewing kana
+03-07-2025 07:41 08:26 new katakana
