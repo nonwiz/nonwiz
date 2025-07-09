@@ -1,8 +1,8 @@
 ---
-title: using radicle
+title: radicle commands
 pinned: false
-tags: 
-draft: true
+tags:
+draft: false
 category: post
 type: post
 date:
@@ -24,6 +24,10 @@ rad init
 ### rad identity
 ```bash
 rad .
+```
+### rad inspect
+```bash
+rad inspect --payload
 ```
 ### check sync node
 ```bash
@@ -104,4 +108,3 @@ git checkout main
 git merge patch/[patchid]
 git push rad [branch]
 ```
-
