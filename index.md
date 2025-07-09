@@ -3,7 +3,7 @@ title: nonwiz
 layout: index.vto
 ---
 
-> broset, ប្រសិទ្ធិ, ブロセト
+> broset, ប្រសិទ្ធិ, ブロセト  
 > soft eng, atm: exploring radicle
 
 **2025 goals**:
