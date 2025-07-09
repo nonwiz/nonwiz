@@ -9,5 +9,5 @@ layout: index.vto
 **2025 goals**:
 - learn kana and rust
 - build side projects
-- read few books [stuck]
+- read few books [😭]
 - start homelab
