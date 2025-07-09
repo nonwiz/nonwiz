@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>radicle commands</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='white'/><text x='4' y='22' font-size='14'>សិទ្ធិ</text></svg>">
+  <script src="/main.js"></script>
+</head>
+<body>
+<header class="flex">
+    <a href="/" alt="Go back">🏡</a>
+    <button onclick="switchTheme()" id="theme-switcher">☀️</button>
+</header>
+<h1>radicle </h1>
+<h2>commands</h2>
+<h3>initialize identity</h3>
+<pre><code class="language-bash">rad auth
+</code></pre>
+<h3>start peer node</h3>
+<pre><code class="language-bash">rad node start
+</code></pre>
+<h3>initialize rad</h3>
+<pre><code class="language-bash">rad init
+</code></pre>
+<h3>rad identity</h3>
+<pre><code class="language-bash">rad .
+</code></pre>
+<h3>rad inspect</h3>
+<pre><code class="language-bash">rad inspect --payload
+</code></pre>
+<h3>check sync node</h3>
+<pre><code class="language-bash">rad sync status
+</code></pre>
+<h3>fetch repo data from seeds</h3>
+<pre><code>rad sync -f
+</code></pre>
+<h3>check rad remote</h3>
+<pre><code class="language-bash">git remote show rad
+</code></pre>
+<h3>clone repo</h3>
+<pre><code class="language-bash">rad clone rid:identity
+</code></pre>
+<h3>push change to repo</h3>
+<pre><code class="language-bash">git push rad [git-branch-name]
+</code></pre>
+<h3>creating issue</h3>
+<pre><code class="language-bash">rad issue open
+</code></pre>
+<h3>list issue</h3>
+<pre><code class="language-bash">rad issue
+</code></pre>
+<h3>show issue</h3>
+<pre><code>rad issue show [cob/generated id]
+</code></pre>
+<h3>comment on issue</h3>
+<pre><code class="language-bash">rad issue comment [cob/half of cob] --message &quot;message here&quot;
+</code></pre>
+<h3>list inbox</h3>
+<pre><code class="language-bash">rad inbox
+</code></pre>
+<h3>show inbox detail</h3>
+<pre><code class="language-bash">rad inbox show [num]
+</code></pre>
+<h3>assign issue</h3>
+<pre><code>rad issue assign [cob] --add did:key:userid
+</code></pre>
+<h3>working on issue</h3>
+<pre><code class="language-bash">git checkout -b [branch]
+git add .
+git commit -m &quot;change&quot;
+git push rad HEAD:refs/patches
+
+# if need to modify should use amend and force
+</code></pre>
+<h3>show patch</h3>
+<pre><code class="language-bash">rad patch show [patchid]
+</code></pre>
+<h3>checkout patch</h3>
+<pre><code class="language-bash">rad patch checkout [patchid]
+</code></pre>
+<h3>diff with patch</h3>
+<pre><code class="language-bash">rad patch diff e5f0a5a
+</code></pre>
+<h3>resolving merge</h3>
+<pre><code class="language-bash">git rebase main
+</code></pre>
+<h3>merge patch</h3>
+<pre><code>git checkout main
+git merge patch/[patchid]
+git push rad [branch]
+</code></pre>
+
+  <a href="/" alt="Go back">← back</a>
+  <footer>
+  <hr />
+  <small>
+  7/9/2025 © 2025 Nonwiz. CC0.
+  <aside>
+    <a href="/cv" target="_blank">CV</a> |
+    <a href="mailto:relay.jigsaw358@passinbox.com" target="_blank"> Mail </a> |
+    <a href="https://github.com/nonwiz" target="_blank" target="_blank">Github</a> |
+    <a href="https://x.com/itsNonwiz" target="_blank" target="_blank">X</a>
+  </aside>
+  </small>
+  </footer>
+</body>
+</html>

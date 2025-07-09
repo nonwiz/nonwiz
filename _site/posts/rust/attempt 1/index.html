@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>rust, attempt 1</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='white'/><text x='4' y='22' font-size='14'>សិទ្ធិ</text></svg>">
+  <script src="/main.js"></script>
+</head>
+<body>
+<header class="flex">
+    <a href="/" alt="Go back">🏡</a>
+    <button onclick="switchTheme()" id="theme-switcher">☀️</button>
+</header>
+<h1>attempt 1 </h1>
+<blockquote>
+<p>Just dumping it here by hand so I can learn, 99% content here taken from links below:</p>
+</blockquote>
+<p>Ref: <a href="https://doc.rust-lang.org/rust-by-example/hello.html" target="_blank">Rust by example</a> , <a href="https://google.github.io/comprehensive-rust/welcome-day-1.html" target="_blank">Comprehensive rust</a> , <a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2024" target="_blank">Rust Playground</a></p>
+<h1>Hello world</h1>
+<pre><code class="language-rust">fn main() {
+	// println!, compile-time code generator before compilation.
+	println!(&quot;Hello world&quot;);
+}
+</code></pre>
+<pre><code class="language-bash"># compile this file in terminal by running:
+rustc main.rs
+</code></pre>
+<h2>Comments</h2>
+<pre><code class="language-rust">// singleline comment
+/* block level comment */
+
+/// Generate library docs for following item.
+//! Generate library docs for enclosing item.
+</code></pre>
+<p>E.g: https://doc.rust-lang.org/rust-by-example/meta/doc.html</p>
+<h2>Formatted print</h2>
+<p>Defined macros from <code>std::fmt</code>.</p>
+<ul>
+<li><code>format!</code>: write formatted text to <a href="https://doc.rust-lang.org/rust-by-example/std/str.html" target="_blank"><code>String</code></a></li>
+<li><code>print!</code>: same as <code>format!</code> but the text is printed to the console (io::stdout).</li>
+<li><code>println!</code>: same as <code>print!</code> but a newline is appended.</li>
+<li><code>eprint!</code>: same as <code>print!</code> but the text is printed to the standard error (io::stderr).</li>
+<li><code>eprintln!</code>: same as <code>eprint!</code> but a newline is appended.</li>
+</ul>
+<h3>Regular arg</h3>
+<pre><code class="language-rust">println!(&quot;day {}&quot;, 1);
+</code></pre>
+<h3>Decimal / Precision</h3>
+<pre><code class="language-rust">let pi = 3.1415292;
+println!(&quot;pi is {pi:.3}&quot;)
+// 3.142
+</code></pre>
+<h3>Diff formatting</h3>
+<pre><code class="language-rust">println!(&quot;Base 10: {}&quot;, 2); // 2
+println!(&quot;Base 2: {:b}&quot;, 2); // 10 - binary
+// b: binary base 2
+// o: octal base 8
+// x: hexadecimal base 16
+</code></pre>
+<h3>Positional args</h3>
+<pre><code class="language-rust">println!(
+&quot;{0}: what's up? {1} replied, 'Nothing much, what about you? {0}'&quot;, 
+&quot;John&quot;, &quot;Susan&quot;
+)
+</code></pre>
+<h3>Named args</h3>
+<pre><code class="language-rust">println!(&quot;{person1}: what's up? {person2} replied, 'Nothing much, what about you? {person1}'&quot;, person1=&quot;John&quot;, person2=&quot;Susan&quot;)
+</code></pre>
+<h3>Pad start</h3>
+<pre><code class="language-rust">println!(&quot;{:&gt;10}&quot;, &quot;John&quot;)
+// Result, min width of 10 characters including text within:
+//    John 
+
+println!(&quot;{name:&gt;5}&quot;, name=&quot;John&quot;)
+//  John
+</code></pre>
+<h3>Pad end</h3>
+<pre><code class="language-rust">println!(&quot;{10}&quot;)
+</code></pre>
+<h3>Pad with placeholder</h3>
+<pre><code class="language-rust">println!(&quot;{balance:0&gt;5}&quot;, balance=6)
+println!(&quot;{balance:X&lt;5}&quot;, balance=7)
+
+// 000006
+// 7XXXXX
+</code></pre>
+<h3>Named args</h3>
+<pre><code class="language-rust">println!(&quot;{balance:Y&lt;width$}&quot;, balance = 7, width = 2);
+// 7Y
+
+// or 
+let width = 2;
+println!(&quot;{balance:Y&lt;width$}&quot;)
+</code></pre>
+<h3>Defined types require fmt::Display</h3>
+<pre><code class="language-rust">println!(&quot;Custom {}&quot;, Structure(3))
+</code></pre>
+<h2>Formatting / Display</h2>
+<p>By default, <code>std::fmt</code> only available for the standard implementation, the rest will need to <code>implement</code> it.  Start debugging in <code>println</code> by using <code>{value:?}</code>.</p>
+<pre><code class="language-rust">// Wouldn't be able to print this one by default - custom type
+struct UnPrintable(i32);
+
+// Using default derive method
+
+#[derive(Debug)]
+struct Computer&lt;'a&gt; {
+    name: &amp;'a str,
+    model: u32,
+}
+
+fn main() {
+    let zephyrus = Computer {
+        name: &quot;Test&quot;,
+        model: 2014,
+    };
+    // Debug Normal print
+    println!(&quot;{zephyrus:?}&quot;);
+    // Debug Pretty print
+    println!(&quot;{zephyrus:#?}&quot;);
+}
+</code></pre>
+<blockquote>
+<p>The &amp; indicates a <strong>reference</strong>, meaning Computer does not own the string but only borrows it. The 'a is a <strong>lifetime parameter</strong>, ensuring that the reference to the string remains valid for at least the lifetime 'a.</p>
+</blockquote>
+<h3>Implementing display for custom type</h3>
+<pre><code class="language-rust">use std::fmt; // Import `fmt`
+
+// A structure holding two numbers. `Debug` will be derived so the results can
+// be contrasted with `Display`.
+#[derive(Debug)]
+struct MinMax(i64, i64);
+
+// Implement `Display` for `MinMax`.
+impl fmt::Display for MinMax {
+    fn fmt(&amp;self, f: &amp;mut fmt::Formatter) -&gt; fmt::Result {
+        // Use `self.number` to refer to each positional data point.
+        write!(f, &quot;({}, {})&quot;, self.0, self.1)
+    }
+}
+</code></pre>
+<h3>Implementing display for nameable field</h3>
+<pre><code class="language-rust">// Define a structure where the fields are nameable for comparison.
+#[derive(Debug)]
+struct Point2D {
+    x: f64,
+    y: f64,
+}
+
+// Similarly, implement `Display` for `Point2D`.
+impl fmt::Display for Point2D {
+    fn fmt(&amp;self, f: &amp;mut fmt::Formatter) -&gt; fmt::Result {
+        // Customize so only `x` and `y` are denoted.
+        write!(f, &quot;x: {}, y: {}&quot;, self.x, self.y)
+    }
+}
+</code></pre>
+<h3>Exercise</h3>
+<pre><code class="language-rust">use std::fmt;
+
+#[derive(Debug)]
+struct Complex {
+    real: f32,
+    imag: f32,
+}
+
+impl fmt::Display for Complex {
+    fn fmt(&amp;self, f: &amp;mut fmt::Formatter) -&gt; fmt::Result {
+        write!(f, &quot;{0} + {1}i&quot;, self.real, self.imag)
+    }
+}
+
+fn main() {
+    let c1 = Complex {
+        real: 3.3,
+        imag: 7.2,
+    };
+    println!(&quot;Print output:\n{c1}&quot;);
+    println!(&quot;\nDebug output:\n{c1:#?}&quot;);
+}
+
+/*
+	Print output:
+	3.3 + 7.2i
+	
+	Debug output:
+	Complex {
+	    real: 3.3,
+	    imag: 7.2,
+	}
+*/
+</code></pre>
+<h2>Debug</h2>
+<pre><code class="language-rust">fn test() -&gt; i32 {
+    2
+}
+
+fn main() {
+    let y = 10;
+    println!(&quot;Hello, world!&quot;);
+    dbg!(test(), dbg!(y) + 10);
+}
+</code></pre>
+<h2>Others</h2>
+<p><code>#[allow(dead_code)]</code> is an <a href="https://doc.rust-lang.org/rust-by-example/attribute.html" target="_blank">attribute</a> which only applies to the module after it.</p>
+<h2>Types and values</h2>
+<p>By default, variable is immutable, <code>mut</code> to let it mutable.</p>
+<h3>Values</h3>
+<p>Built-in types and syntax for literal values</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Types</th>
+<th>Literals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Signed integers</td>
+<td>i8, i16, i32, i64, i128, isize</td>
+<td>-10, 0, 1_000, 123_i64</td>
+</tr>
+<tr>
+<td>Unsigned integers</td>
+<td>u8, u16, u32, u64, u128, usize</td>
+<td>0, 123, 10_u16</td>
+</tr>
+<tr>
+<td>Floating point numbers</td>
+<td>f32, f64</td>
+<td>3.14, -10.0e20, 2_f32</td>
+</tr>
+<tr>
+<td>Unicode scalar values</td>
+<td>char</td>
+<td>'a', '$', '∞'</td>
+</tr>
+<tr>
+<td>Booleans</td>
+<td>bool</td>
+<td>true, false</td>
+</tr>
+<tr>
+<td>Types have widths as follows:</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>iN</code>, <code>uN</code>, <code>fN</code> are <em>N</em> bits wide,</li>
+<li><code>isize</code> and <code>usize</code> are the width of a pointer,</li>
+<li><code>char</code> is 32 bits wide,</li>
+<li><code>bool</code> is 8 bits wide.</li>
+</ul>
+<h2>Assert EQ</h2>
+<pre><code class="language-rust">let x = 3.14;
+let y = 10;
+assert_eq!(x, y)
+// error: expected floating-point number, found interger.
+</code></pre>
+<h1>Controls</h1>
+<h2>If Expressions</h2>
+<pre><code class="language-rust">fn fibo(num: u32) -&gt; u32 {
+    if num &lt; 2 {
+        return num;
+    }
+    return fibo(num - 1) + fibo(num - 2);
+}
+</code></pre>
+<pre><code class="language-rust">fn main() {
+	let x = 5;
+	let size = if x &gt; 5 { &quot;big&quot; } : { &quot;small&quot; };
+	dbg!(size);
+	// size = 'small'
+}
+</code></pre>
+<h2>Match or switch case</h2>
+<pre><code class="language-rust">	let y = 11;
+    let size_v2 = match y {
+		1 =&gt; &quot;1&quot;,
+		2 =&gt; &quot;2&quot;,
+        5 =&gt; {
+            println!(&quot;is eq 5&quot;);
+            &quot;is 5&quot;
+        }
+        10 =&gt; {
+            println!(&quot;is 10&quot;);
+            &quot;is 10&quot;
+        }
+        _ =&gt; {
+            println!(&quot;not match&quot;);
+            &quot;&quot;
+        }
+    };
+</code></pre>
+<h2>Loops</h2>
+<h3>While loop</h3>
+<pre><code class="language-rust">fn main() {
+    let mut i: i8 = 1;
+    while i &lt; 10 {
+        i += 1;
+    }
+    dbg!(i);
+}
+</code></pre>
+<h3>For loop</h3>
+<pre><code class="language-rust">fn main() {
+    for x in 1..10 {
+        println!(&quot;{x:&gt;width$}&quot;, width = x)
+    }
+	
+    for x in [1, 3, 5] {
+        println!(&quot;{x}&quot;)
+    }
+
+	for i in (0..10).rev() {
+		// 9, 8, 7, ... 0
+	}
+
+	// can be 'A'..='Z', 'a'..='z', '0'..='9'
+	for i in 'A'..='Z' {
+		// A B C
+    }
+
+}
+</code></pre>
+<h3>Forever loop</h3>
+<pre><code class="language-rust">loop {
+ // alway run until &quot;break&quot;
+}
+</code></pre>
+<h3>Assigned or label breaks</h3>
+<pre><code class="language-rust">fn main() {
+    let s = [[5, 6, 7], [8, 9, 10], [21, 15, 32]];
+    let mut elements_searched = 0;
+    let target_value = 10;
+    'outer: for i in 0..=2 {
+        for j in 0..=2 {
+            elements_searched += 1;
+            if s[i][j] == target_value {
+                break 'outer;
+            }
+        }
+    }
+    dbg!(elements_searched);
+}
+</code></pre>
+<pre><code class="language-rust">fn main() {
+    'aloop: for x in [1, 3, 5] {
+        let mut count = 0;
+        'bloop: while count &lt; 4 {
+            count += 1;
+            println!(&quot;Printing {x}&quot;);
+            if count == 3 {
+                break 'bloop;
+            }
+            if x == 3 {
+                break 'aloop;
+            }
+        }
+        println!(&quot;Print outside&quot;);
+    }
+}
+</code></pre>
+<h1>Macros</h1>
+<p>Macros are expanded into Rust code during compilation, and can take a variable number of arguments. They are distinguished by a <code>!</code> at the end. The Rust standard library includes an assortment of useful macros.</p>
+<ul>
+<li><code>println!(format, ..)</code> prints a line to standard output, applying formatting described in <a href="https://doc.rust-lang.org/std/fmt/index.html" target="_blank"><code>std::fmt</code></a>.</li>
+<li><code>format!(format, ..)</code> works just like <code>println!</code> but returns the result as a string.</li>
+<li><code>dbg!(expression)</code> logs the value of the expression and returns it.</li>
+<li><code>todo!()</code> marks a bit of code as not-yet-implemented. If executed, it will panic.</li>
+<li><code>assert!</code></li>
+<li><code>unreachable!</code></li>
+<li><code>eprintln!</code></li>
+</ul>
+<h1>Arrays</h1>
+<pre><code class="language-rust">fn main() {
+	// u8 refer to type, 5 here refer to size of the array
+	let mut arr: [u8; 5] = [6, 3, 2, 1, 0];
+	arr[0] = 5;
+	println!(&quot;Arr : {arr:?}&quot;);
+}
+</code></pre>
+<pre><code class="language-rust">fn main() {
+	let arr = [0; 5];
+	// [0, 0, 0, 0, 0]
+}
+</code></pre>
+<h2>Tuples</h2>
+<pre><code class="language-rust">fn main() {
+	let tup = (0, 5, 10, 15);
+	// or
+	let tup1 : (u8, u8, u8, u8) = (1, 2, 3, 4)
+}
+
+</code></pre>
+<h2>Array iteration</h2>
+<pre><code class="language-rust">fn main() {
+    let arr = [1, 2, 3, 4, 5];
+    for item in arr {
+        for i in 1..item {
+            println!(&quot;i: {i}, item: {item}&quot;)
+        }
+        println!(&quot;Item: {item}&quot;);
+    }
+}
+</code></pre>
+<h2>Patterns and destructuring</h2>
+<pre><code class="language-rust">fn main() {
+    let arr = [1, 2, 3, 4, 5];
+    let [first, second, _third, _fourth, _fifth] = arr;
+    println!(&quot;first: {first}, sec: {second}&quot;);
+
+    let tup = (true, false);
+    let (is_true, is_false) = tup;
+    println!(&quot;{is_true}, {is_false}&quot;);
+}
+</code></pre>
+<h1>References</h1>
+<p>accessing value without taking ownership of the value which also known as borrowing.</p>
+<h2>Shared references</h2>
+<p>read-only value and referenced data cannot be change</p>
+<pre><code class="language-rust">fn main() {
+	let a = 'A';
+	let b = 'B';
+	// refering to the reference using &amp;
+	let mut x = &amp;a;
+	x = &amp;b;
+	// refer back to dereference using: *x 
+	// but cannot do write operation to the original source.
+}
+
+</code></pre>
+<h2>Exclusive references</h2>
+<p>can read and also write</p>
+<pre><code class="language-rust">fn main() {
+	let mut a = 'A';
+	let b = 'B';
+	let r = &amp;mut a;
+	*r = 'X';
+	// now `a` changed into 'X'.
+}
+
+</code></pre>
+<pre><code class="language-rust">fn main() {
+    let mut point = (1, 2);
+    let x_coord = &amp;mut point.0;
+    *x_coord = 20;
+    println!(&quot;point: {point:?}&quot;);
+	// (20, 2)
+}
+</code></pre>
+<pre><code class="language-rust">fn main() {
+    let mut coord = (1, 20);
+    let x_coor = &amp;mut coord.0;
+    {
+		coord.0 = 1;
+        *x_coor = 3;
+        dbg!(x_coor);
+		// we have to scope it like this for borrow to end 
+		// so we can use it.
+		
+    }
+    println!(&quot;{coord:#?}&quot;);
+}
+</code></pre>
+<h2>Slices</h2>
+<pre><code class="language-rust">// Given the aarray
+let a = [1, 2, 3, 4, 5];
+let slice_0_2 : [i32] = &amp;a[..3]; // or &amp;a[0..3]
+let slice_everything = &amp;a[..];
+let slice_before_end = &amp;a[..a.len() - 1];
+</code></pre>
+<h2>Strings</h2>
+<h3><code>&amp;str</code> vs <code>String</code> in Rust</h3>
+<h3><code>&amp;str</code></h3>
+<ul>
+<li>Borrowed string slice (does <strong>not</strong> own the data)</li>
+<li>Immutable</li>
+<li>Stored on the stack (or inside another object)</li>
+<li>Zero allocation — super fast</li>
+<li>Often used for function parameters (<code>fn foo(s: &amp;str)</code>)</li>
+<li>Comes from string literals (<code>&quot;hello&quot;</code> is a <code>&amp;'static str</code>)</li>
+<li>Limited: can’t grow or mutate</li>
+</ul>
+<h3><code>String</code></h3>
+<ul>
+<li>Owns its data</li>
+<li>Mutable and growable</li>
+<li>Allocated on the heap</li>
+<li>Used when you need to build or modify strings</li>
+<li>Slower than <code>&amp;str</code> because of heap allocation</li>
+<li>Common when returning strings or storing them long-term</li>
+</ul>
+<h3>Conversion</h3>
+<pre><code class="language-rust">// &amp;str -&gt; String
+let s: &amp;str = &quot;hello&quot;;
+let owned: String = s.to_string();
+
+// String -&gt; &amp;str
+let s: String = String::from(&quot;hello&quot;);
+let slice: &amp;str = &amp;s;
+</code></pre>
+<pre><code class="language-rust">fn main() {
+    let text_a: &amp;str = &quot;Hello&quot;;
+    let mut text_b: String = String::from(&quot;World&quot;);
+    let text_c: String = &quot;Yo&quot;.to_string();
+    text_b.push_str(&quot; #01&quot;);
+    println!(&quot;{text_a}: {text_b}, {text_c}&quot;);
+    let text_d = format!(&quot;{text_a}: {text_b}, {text_c}&quot;).to_ascii_uppercase();
+    let text_e = &amp;text_d[0..3];
+    println!(&quot;{text_a}: {text_b}, {text_c}, text_d: {text_d}, text_e: {text_e}&quot;);
+}
+</code></pre>
+<h3>Byte string</h3>
+<pre><code class="language-rust">println!(&quot;{:?}&quot;, b&quot;abc&quot;);
+</code></pre>
+<h3>Raw string</h3>
+<pre><code class="language-rust">println!(r#&quot;&lt;a href=&quot;link.html&quot;&gt;link&lt;/a&gt;&quot;#);
+</code></pre>
+<h2>Reference validity</h2>
+<p>Rust enforces a number of rules for references that make them always safe to use. One rule is that references can never be <code>null</code>, making them safe to use without <code>null</code> checks. The other rule we’ll look at for now is that references can’t <em>outlive</em> the data they point to.</p>
+<pre><code class="language-rust">fn main() {
+    let x_ref = {
+        let x = 10;
+        &amp;x
+    };
+    dbg!(x_ref);
+}
+</code></pre>
+<h2>User-defined types</h2>
+<h3>Named structs</h3>
+<pre><code class="language-rust">struct Person {
+    name: String,
+    age: u8,
+}
+
+fn describe(person: &amp;Person) {
+    println!(&quot;{} is {} years old&quot;, person.name, person.age);
+}
+
+fn main() {
+    let john = Person {
+        name: &quot;John&quot;.to_string(),
+        age: 12,
+    };
+    describe(&amp;john);
+}
+</code></pre>
+<h3>Tuple structs or newtype</h3>
+<pre><code class="language-rust">struct Geometry(u32, u32, u32);
+
+fn main() {
+	let g1 = Geometry(1, 2, 3);
+}
+</code></pre>
+<h3>Enums</h3>
+<pre><code class="language-rust">#[derive(Debug)]
+enum Direction {
+    Left,
+    Right,
+}
+
+#[derive(Debug)]
+enum PlayerMove {
+    Pass, // simple
+    Run(Direction), // tuple variant
+    Teleport { x: u32, y: u32 }, // struct variant
+}
+
+fn main() {
+    let left = Direction::Left;
+    let p1: PlayerMove = PlayerMove::Run(Direction::Right);
+    let p2 = PlayerMove::Pass;
+    let p3 = PlayerMove::Run(left);
+    println!(&quot;{p1:?}, {p2:?}, {p3:?}&quot;);
+}
+</code></pre>
+<p>decide which size to store the variable:</p>
+<pre><code class="language-rust">#[repr(u32)]
+enum Bar {
+    A, // 0
+    B = 10000,
+    C, // 10001
+}
+
+fn main() {
+    println!(&quot;A: {}&quot;, Bar::A as u32);
+    println!(&quot;B: {}&quot;, Bar::B as u32);
+    println!(&quot;C: {}&quot;, Bar::C as u32);
+}
+</code></pre>
+<h3>Type aliases</h3>
+<pre><code class="language-rust">enum CarryableConcreteItem {
+    Left,
+    Right,
+}
+
+type Item = CarryableConcreteItem;
+
+// Aliases are more useful with long, complex types:
+use std::cell::RefCell;
+use std::sync::{Arc, RwLock};
+type PlayerInventory = RwLock&lt;Vec&lt;Arc&lt;RefCell&lt;Item&gt;&gt;&gt;&gt;;
+</code></pre>
+<h3>Const</h3>
+<p>Use <strong>const</strong> when you want <strong>compile-time</strong> constant values (like math constants, config values).</p>
+<pre><code class="language-rust">const DIGEST_SIZE: usize = 3;
+const FILL_VALUE: u8 = calculate_fill_value();
+
+// constant function 
+const fn calculate_fill_value() -&gt; u8 {
+    if DIGEST_SIZE &lt; 10 { 42 } else { 13 }
+}
+
+fn compute_digest(text: &amp;str) -&gt; [u8; DIGEST_SIZE] {
+    let mut digest = [FILL_VALUE; DIGEST_SIZE];
+    for (idx, &amp;b) in text.as_bytes().iter().enumerate() {
+        digest[idx % DIGEST_SIZE] = digest[idx % DIGEST_SIZE].wrapping_add(b);
+    }
+    digest
+}
+
+fn main() {
+    let digest = compute_digest(&quot;Hello&quot;);
+    println!(&quot;digest: {digest:?}&quot;);
+}
+</code></pre>
+<h3>Static</h3>
+<ul>
+<li><strong>One memory location</strong> in the program — has a fixed address.</li>
+<li>Can be <strong>mutable</strong> (but requires unsafe).</li>
+<li>Lives for the entire <strong>lifetime of the program</strong> ('static).</li>
+<li>Used for <strong>global state</strong>, large objects, or interfacing with C.</li>
+</ul>
+<pre><code class="language-rust">static BANNER: &amp;str = &quot;Welcome to RustOS 3.14&quot;;
+
+fn main() {
+    println!(&quot;{BANNER}&quot;);
+}
+</code></pre>
+<h2>Pattern matching</h2>
+<p>Extracting data from structures.</p>
+<h3>Irrefutable patterns</h3>
+<pre><code class="language-rust">fn takes_tuple(tuple: (char, i32, bool)) {
+	let a = tuple.0;
+	let b = tuple.1;
+	let c = tuple.2;
+	let (a, b, c) = tuple;
+	let (_, b, c) = tuple;
+	let (.., c) = tuple;
+	let (a, .., c) = tuple;
+}
+</code></pre>
+<h3>Matching values</h3>
+<pre><code class="language-rust">fn main() {
+    let input = 'x';
+    match input {
+        'q' =&gt; println!(&quot;Quiting.&quot;),
+        'a' | 's' | 'w' | 'd' =&gt; println!(&quot;Moving&quot;),
+        '0'..='9' =&gt; println!(&quot;Numeric&quot;),
+        key if key.is_lowercase() =&gt; println!(&quot;Lower case!&quot;),
+        _ =&gt; println!(&quot;Unknown!&quot;),
+    }
+}
+</code></pre>
+<pre><code class="language-rust">let opt = Some(123);
+match opt {
+    outer @ Some(inner) =&gt; {
+        println!(&quot;outer: {outer:?}, inner: {inner}&quot;);
+    }
+    None =&gt; {}
+}
+</code></pre>
+<pre><code class="language-rust">fn main() {
+    let data = Some(8);
+
+    match data {
+        Some(inner) =&gt; println!(&quot;Some, {inner}&quot;),
+        None =&gt; println!(&quot;Nothing&quot;),
+    }
+
+    match data {
+        outer @ Some(inner) =&gt; println!(&quot;Some: {outer:?}, {inner}&quot;),
+        None =&gt; println!(&quot;Nothing&quot;),
+    }
+}
+</code></pre>
+<h3>Destructuring structs</h3>
+<p>below work for primitive value but not complex operation or String.</p>
+<pre><code class="language-rust">struct Foo {
+    x: (u32, u32),
+    y: u32,
+}
+
+#[rustfmt::skip]
+fn main() {
+    let foo = Foo { x: (1, 2), y: 3 };
+    match foo {
+        Foo { y: 2, x: i }   =&gt; println!(&quot;y = 2, x = {i:?}&quot;),
+        Foo { x: (1, b), y } =&gt; println!(&quot;x.0 = 1, b = {b}, y = {y}&quot;),
+        Foo { y, .. }        =&gt; println!(&quot;y = {y}, other fields were ignored&quot;),
+    }
+}
+</code></pre>
+<p>For complex type matching.</p>
+<pre><code class="language-rust">struct Person {
+    name: String,
+    age: u32,
+}
+
+fn main() {
+    let name_john = String::from(&quot;John&quot;);
+    let name_sarra = String::from(&quot;SARRA&quot;);
+
+    let john = Person {
+        name: &quot;SARRA&quot;.to_string(),
+        age: 10,
+    };
+    match john {
+        Person { name, .. } if name == name_john =&gt; println!(&quot;John-san!&quot;),
+        Person { name, .. } if name.eq(&amp;name_sarra) =&gt; println!(&quot;Sarra-san!&quot;),
+        _ =&gt; println!(&quot;no idea who&quot;),
+    }
+}
+</code></pre>
+<h3>Destructuring enums</h3>
+<pre><code class="language-rust">enum Result {
+    Ok(i32),
+    Err(String),
+}
+
+fn divide_in_two(n: i32) -&gt; Result {
+    if n % 2 == 0 {
+        Result::Ok(n / 2)
+    } else {
+        Result::Err(format!(&quot;cannot divide {n} into two equal parts&quot;))
+    }
+}
+
+fn main() {
+    let n = 100;
+    match divide_in_two(n) {
+        Result::Ok(half) =&gt; println!(&quot;{n} divided in two is {half}&quot;),
+        Result::Err(msg) =&gt; println!(&quot;sorry, an error happened: {msg}&quot;),
+    }
+}
+</code></pre>
+<pre><code class="language-rust">fn divide_by_two(num: i32) -&gt; Option&lt;i32&gt; {
+    if num % 2 == 0 {
+        return Some(num / 2);
+    }
+    return None;
+}
+
+fn main() {
+    let val = divide_by_two(9);
+    match val {
+        Some(inner) =&gt; println!(&quot;Divisible by two, result is: {inner}&quot;),
+        None =&gt; println!(&quot;Cannot be divide by two&quot;),
+    }
+}
+</code></pre>
+<h3>Let control flow</h3>
+<h4>if let</h4>
+<pre><code class="language-rust">use std::{thread::sleep, time::Duration};
+
+fn sleep_for(secs: f32) {
+    if let Ok(duration) = Duration::try_from_secs_f32(secs) {
+        let duration_as_sec = duration.as_secs();
+        println!(&quot;Sleeping for {duration_as_sec}&quot;);
+        sleep(duration);
+        println!(&quot;Waking up...&quot;);
+    } else {
+        println!(&quot;Cannot sleep with given value: {secs}&quot;);
+    }
+}
+
+fn main() {
+    sleep_for(2.0);
+    sleep_for(-4.0);
+}
+</code></pre>
+<h4>while let</h4>
+<pre><code class="language-rust">fn main() {
+    let mut text = String::from(&quot;How can I help?&quot;);
+    while let Some(result) = text.pop() {
+        dbg!(result);
+    }
+}
+</code></pre>
+<h4>let else</h4>
+<pre><code class="language-rust">fn find_hex(optional_text: Option&lt;String&gt;) -&gt; Result&lt;u32, String&gt; {
+    let Some(text) = optional_text else {
+        return Err(&quot;Not valid text.&quot;.to_string());
+    };
+    let Some(first_character) = text.chars().next() else {
+        return Err(&quot;Not valid first character&quot;.to_string());
+    };
+    let Some(result) = first_character.to_digit(32) else {
+        return Err(&quot;Cannot convert&quot;.to_string());
+    };
+    Ok(result)
+}
+
+fn main() {
+    let text = String::from(&quot;n&quot;);
+    let result = find_hex(Some(text));
+    dbg!(result);
+}
+</code></pre>
+<h2>Methods</h2>
+<p>Associating functions with types.</p>
+<h2>Traits</h2>
+<p>Behaviors shared by multiple types.</p>
+<h2>Generics</h2>
+<p>Parameterizing types on other types.</p>
+<h2>Standard library types and traits</h2>
+<p>A tour of Rust's rich standard library.</p>
+<h2>Closures</h2>
+<p>Function pointers with data</p>
+<p>Function pointers with data</p>
+
+  <a href="/" alt="Go back">← back</a>
+  <footer>
+  <hr />
+  <small>
+  3/24/2025 © 2025 Nonwiz. CC0.
+  <aside>
+    <a href="/cv" target="_blank">CV</a> |
+    <a href="mailto:relay.jigsaw358@passinbox.com" target="_blank"> Mail </a> |
+    <a href="https://github.com/nonwiz" target="_blank" target="_blank">Github</a> |
+    <a href="https://x.com/itsNonwiz" target="_blank" target="_blank">X</a>
+  </aside>
+  </small>
+  </footer>
+</body>
+</html>
