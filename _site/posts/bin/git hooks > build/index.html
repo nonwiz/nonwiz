@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>git hooks > build</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='white'/><text x='4' y='22' font-size='14'>សិទ្ធិ</text></svg>">
+  <script src="/main.js"></script>
+</head>
+<body>
+<header class="flex">
+    <a href="/" alt="Go back">🏡</a>
+    <button onclick="switchTheme()" id="theme-switcher">☀️</button>
+</header>
+<h1>git hooks > build </h1>
+<p>So, on my site, I often mess around with static site generators. For now, I'm really digging lume.land (which uses Deno). It's been smooth sailing with Vercel until recently, when suddenly, my builds started failing.</p>
+<p>Man, I wasted <em>so</em> much time trying to fix it – retrying builds, messing with build commands, you name it. But, silver lining! As a total Git n00b, I stumbled upon git hooks. So, I ended up just making a pre-commit hook that generates all my HTML files <em>before</em> I even commit them. This is awesome because now I can completely skip the build step on Vercel! (ヽ(。_°)ノ)</p>
+<p>If you're thinking of doing something similar, here's how: Just create a file in your repo at <code>.git/hooks/pre-commit</code> and drop in the following content:</p>
+<pre><code class="language-bash">#!/bin/sh
+set -e
+/Users/ur_user/.deno/bin/deno task build
+git add _site/*
+exit 0
+</code></pre>
+<p>save it and <code>chmod +x filepath</code> to allow it to executable. I had to use full path for my obsidian git to work (not gonna spend more time debuggin that too (╯°□°)╯︵ ┻━┻)</p>
+
+  <a href="/" alt="Go back">← back</a>
+  <footer>
+  <hr />
+  <small>
+  7/10/2025 © 2025 Nonwiz. CC0.
+  <aside>
+    <a href="mailto:relay.jigsaw358@passinbox.com" target="_blank"> Mail </a> |
+    <a href="https://github.com/nonwiz" target="_blank" target="_blank">Github</a> |
+    <a href="https://x.com/itsNonwiz" target="_blank" target="_blank">X</a>
+  </aside>
+  </small>
+  </footer>
+</body>
+</html>
