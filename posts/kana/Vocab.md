@@ -395,3 +395,17 @@ date:
 
 https://www.instagram.com/reel/DDQFoeFzvvd/?utm_source=ig_web_copy_link
 
+
+## Basic sentences
+
+お母さんはどこに住んでいますか？
+okaasan wa dokoni sundei masuka?
+Where does your mother live?
+
+母は　東京　　に住んでいます
+はは　とうきょ　すん
+My mother lives in Tokyo.
+
+兄は　ソウル　に住んでいます
+あに　　　　　　すん
+

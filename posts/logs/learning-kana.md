@@ -74,3 +74,4 @@ date:
 01-07-2025 22:11 22:50 reviewing kana
 02-07-2025 20:33 21:23 reviewing kana
 03-07-2025 07:41 08:26 new katakana
+13-07-2025 11:07 12:25 reviewing and duolingo

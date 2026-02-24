@@ -60,3 +60,9 @@ Perfect for automating all the things, scaling infra, CI/CD, and just being a ba
 
 ## Protocol
 - https://protobuf.dev/
+
+## DX
+
+### Python
+-  Ruff: formatter
+-  UV: package manager

@@ -9,75 +9,75 @@ date:
 ---
 ## commands
 
-### initialize identity
+**initialize identity**
 ```bash
 rad auth
 ```
-### start peer node
+**start peer node**
 ```bash
 rad node start
 ```
-### initialize rad
+**initialize rad**
 ```bash
 rad init
 ```
-### rad identity
+**rad identity**
 ```bash
 rad .
 ```
-### rad inspect
+**rad inspect**
 ```bash
 rad inspect --payload
 ```
-### check sync node
+**check sync node**
 ```bash
 rad sync status
 ```
-### fetch repo data from seeds
+**fetch repo data from seeds**
 ```
 rad sync -f
 ```
-### check rad remote
+**check rad remote**
 ```bash
 git remote show rad
 ```
-### clone repo
+**clone repo**
 ```bash
 rad clone rid:identity
 ```
-### push change to repo
+**push change to repo**
 ```bash
 git push rad [git-branch-name]
 ```
-### creating issue
+**creating issue**
 ```bash
 rad issue open
 ```
-### list issue
+**list issue**
 ```bash
 rad issue
 ```
-### show issue
+**show issue**
 ```
 rad issue show [cob/generated id]
 ```
-### comment on issue
+**comment on issue**
 ```bash
 rad issue comment [cob/half of cob] --message "message here"
 ```
-### list inbox
+**list inbox**
 ```bash
 rad inbox
 ```
-### show inbox detail
+**show inbox detail**
 ```bash
 rad inbox show [num]
 ```
-### assign issue
+**assign issue**
 ```
 rad issue assign [cob] --add did:key:userid
 ```
-### working on issue
+**working on issue**
 ```bash
 git checkout -b [branch]
 git add .
@@ -86,25 +86,34 @@ git push rad HEAD:refs/patches
 
 # if need to modify should use amend and force
 ```
-### show patch
+**show patch**
 ```bash
 rad patch show [patchid]
 ```
-### checkout patch
+**checkout patch**
 ```bash
 rad patch checkout [patchid]
 ```
-### diff with patch
+**diff with patch**
 ```bash
 rad patch diff e5f0a5a
 ```
-### resolving merge
+**resolving merge**
 ```bash
 git rebase main
 ```
-### merge patch
+**merge patch**
 ```
 git checkout main
 git merge patch/[patchid]
 git push rad [branch]
+```
+**sync**
+```bash
+rad sync --fetch
+git pull
+```
+**make private**
+```bash
+rad id update --title "Make private" --visibility private
 ```
