@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>404</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Page not found — {{ G.title }}">
+  <title>404 — Page not found | {{ G.title }}</title>
+  <!-- Prevent flash of wrong theme before CSS loads -->
+  <script>(function(){var t=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t})();</script>
+  <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='white'/><text x='4' y='22' font-size='14'>សិទ្ធិ</text></svg>">
+  <script src="/main.js" defer></script>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header>
+  <a href="/" class="site-title" aria-label="Back to home">{{ G.title }}</a>
+  <button onclick="switchTheme()" id="theme-switcher" aria-label="Switch to dark mode">🌙 Dark</button>
+</header>
+<main id="main">
   {{ content }}
+  <a href="/" class="back-link">← Back to home</a>
+</main>
+<footer>
+  <span>{{ G.post_footer }}</span>
+  <nav aria-label="Social links" class="footer-links">
+    <a href="{{ G.mail }}">Mail</a>
+    <a href="{{ G.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="{{ G.x }}" target="_blank" rel="noopener noreferrer">X</a>
+  </nav>
+</footer>
 </body>
 </html>
